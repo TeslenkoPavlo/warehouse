@@ -1,0 +1,56 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    height: 100%;
+    display: grid;
+    grid-template:
+    "header header" 0.5fr
+    "content-1 spam-1" 0.4fr
+    "content-21 spam-1" 0.2fr
+    "content-22 spam-2" 0.2fr
+    "content-3 spam-2" 0.4fr
+    "footer footer " 0.5fr
+    / 1fr 0.5fr;
+}
+
+header {
+    grid-area: header;
+    background: #8D8484;
+}
+
+.content-1 {
+    grid-area: content-1;
+    background: #776969;
+}
+.content-21 {
+    grid-area: content-21;
+    background: #643030;
+}
+
+.content-22 {
+    grid-area: content-22;
+    background: #643030;
+}
+
+.content-3 {
+    grid-area: content-3;
+    background: #441818;
+}
+
+.spam-1 {
+    grid-area: spam-1;
+    background: #937575;
+}
+
+.spam-2 {
+    grid-area: spam-2;
+    background: #644C4C;
+}
+
+footer{
+    grid-area: footer;
+    background: #BDBDBD;
+}

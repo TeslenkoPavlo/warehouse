@@ -1,0 +1,41 @@
+    body {
+        margin: 0;
+        height: 100vh;
+    }
+
+    .wrapper {
+        height: 100%;
+        display: grid;
+        grid-template:
+        "nav nav" 0.2fr
+        "main aside-top" 1fr
+        "main aside-bottom" 0.9fr
+        "footer-top footer-top" 0.3fr
+        "footer-bottom footer-bottom" 0.4fr
+        / 2fr 1fr;
+    }
+
+    .main {
+        grid-area: main;
+        background: #A4A4A4;
+    }
+
+    .aside-top {
+        background: #7F7A7A;
+        grid-area: aside-top;
+    }
+
+    .aside-bottom {
+        background: #615050;
+        grid-area: aside-bottom;
+    }
+
+    .footer-top {
+        grid-area: footer-top;
+        background: #D9D9D9;
+    }
+
+    .footer-bottom {
+        grid-area: footer-bottom;
+        background: #AFA9A9;
+    }

@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+}
+
+header{
+    height: 20vh;
+    background: #8D8484;
+}
+
+header p {
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+}
+
+main div section p {
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+main div aside p {
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+section {
+    height: 20vh;
+    width: 73vw;
+}
+
+footer {
+    height: 20vh;
+    background: #BDBDBD;
+}
+
+footer p {
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+
+.Content-1 {
+    background: #776969;
+}
+
+.Content-2 {
+    background: #643030;
+}
+
+.Content-3 {
+    background: #441818;
+}
+
+aside {
+    height: 30vh;
+    width: 27vw;
+}
+
+.spam1 {
+    background: #937575;
+}
+
+.spam2 {
+    background: #644C4C;
+}
+
+header, section, aside, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    background-color: #161622;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-left {
+    width: 396px;
+    height: 396px;
+    border-radius: 396px;
+    border: 48px solid #6F1DF4;
+    opacity: 0.5;
+    position: absolute;
+    top: -210px;
+    left: -200px;
+}
+
+.circle-right {
+    height: 260px;
+    width: 260px;
+    border-radius: 260px;
+    border: 48px solid #6F1DF4;
+    opacity: 0.5;
+    position: absolute;
+    top: -20px;
+    right: -120px;
+}
+
+.page-not-found {
+   text-align: center;
+}
+
+.page-not-found > h2 {
+    height: 180px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.90);
+    text-align: center;
+    font-size: 180px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140px;
+    letter-spacing: -0.5px;
+}
+
+.page-not-found > h3 {
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: 0.25px;
+}
+
+.page-not-found > p {
+    margin: 0 auto;
+    padding: 24px 0 40px 0;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    width: 533px;
+}
+
+section > div {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.page-not-found > div > button:nth-child(1) {
+    display: flex;
+    height: 64px;
+    padding: 0 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 32px;
+    background:  #6F1DF4;
+    color:  #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 19.2px */
+}
+
+.page-not-found > div > button:nth-child(2) {
+    display: flex;
+    height: 64px;
+    padding: 0 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 32px;
+    background: #FFF;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 19.2px */
+}
