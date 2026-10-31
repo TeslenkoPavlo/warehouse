@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template:
+    "header" 86px
+    "personal_info" auto
+    "category" auto
+    "articles" auto
+    "subsrcibe_form" auto
+    "footer" auto
+    / 1fr;
+}
+
+header {
+    grid-area: header;
+    background: #EFF0F3;
+    padding: 26px 15px;
+    box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
+    position: fixed;
+    width: 100%;
+}
+
+.personal_info {
+    grid-area: personal_info;
+    background: #EFF0F3;
+    padding: 164px 0 263px 0;
+}
+
+.category {
+    grid-area: category;
+    background: #EFF0F3;
+    padding: 67px 0 68px 0;
+}
+
+.articles {
+    grid-area: articles;
+    background: #FFFFFE;
+    padding: 80px 0;
+}
+
+.subsrcibe_form {
+    grid-area: subsrcibe_form;
+    background: #EFF0F3;
+    padding: 58px 0;
+}
+
+footer {
+    grid-area: footer;
+    background: #E4E5E9;
+    padding: 70px 0 26px 0;
+}
+
+.header-wrapper {
+    display: grid;
+    margin: 0 auto;
+    height: 100%;
+    width: 1250px;
+   grid-template-columns: minmax(min-content, max-content) minmax(min-content, max-content);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: minmax(min-content, max-content) minmax(min-content, max-content);
+    align-items: baseline;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: minmax(min-content, max-content) minmax(min-content, max-content);
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-menu nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 50px;
+    list-style-type: none;
+}
+
+.nav-menu nav ul li:nth-of-type(4) {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.logo h3 {
+    color: #001858;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+header, footer .logo p {
+    color: #6246EA;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#footer-blog {
+    color: #6246EA;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.nav-menu a {
+    color: #2B2C34;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.nav-menu div {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    padding: 10px 17px;
+    border-radius: 4px;
+    background: #6246EA;
+}
+
+.nav-menu div button {
+    color: #FFFFFE;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.personal-info-wrapper {
+    margin: 0 auto;
+    height: 100%;
+    width: 1250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dasteen {
+    display: grid;
+    gap: 30px;
+
+}
+
+.dasteen h1{
+    color: #2B2C34;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.dasteen  p {
+    border-left: 3px solid #2B2C34;
+    padding-left: 10px;
+    color: #9A9494;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.dasteen form{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: min-content min-content;
+    gap: 20px;
+}
+
+.dasteen form #email {
+    padding: 21px 200px 21px 25px;
+    height: 67px;
+    width: 444px;
+    border-radius: 8px;
+    background: #FFFFFE;
+    border: none;
+}
+
+.dasteen form #email:focus {
+    outline: none;
+}
+
+
+.dasteen form #email::placeholder {
+    color: #C0C0C0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dasteen form #subscribe {
+    padding: 20px 23px 19px 23px;
+    border: none;
+    border-radius: 8px;
+    background:  #6246EA;
+    color: #FFFFFE;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    height: 67px;
+    width: 145px;
+}
+
+.hero-image {
+    justify-self: end;
+}
+
+.category-wrapper {
+    margin: 0 auto;
+    height: 100%;
+    width: 1250px;
+    display: grid;
+    gap: 50px;
+}
+
+.browse-category {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.browse-category h3 {
+    color:  #2B2C34;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.browse-category div {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.browse-category p {
+    color: #2B2C34;
+    text-align: right;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.cards-category {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards-category .card {
+    width: 220px;
+    height: 280px;
+    border-radius: 8px;
+    background:  #FFFFFE;
+}
+
+.cards-category .card p {
+    color: #2B2C34;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+
+.cards-category .card-1  {
+    margin: 65px 130px 95px 30px;
+    display: grid;
+    gap: 30px;
+}
+
+.cards-category .card-1 svg {
+    margin: 12px 14px 11px 13px;
+}
+
+.cards-category .card-2 {
+    margin: 65px 72px 95px 30px;
+    display: grid;
+    gap: 30px;
+}
+
+.cards-category div:nth-child(3) {
+    background-color: #6246EA;
+}
+
+.cards-category .card-3 {
+    margin: 65px 94px 95px 30px;
+    display: grid;
+    gap: 30px;
+}
+
+.cards-category .card-3 div {
+    width: 60px;
+    height: 60px;
+    border-radius: 7.458px;
+    background: #FFFFFE;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-category .card-3 p {
+    color: #FFFFFE;
+}
+
+.cards-category .card-4 {
+    margin: 65px 115px 95px 30px;
+    display: grid;
+    gap: 30px;
+}
+
+.cards-category .card-4 svg {
+    margin: 15px 12px 14px 12px;
+}
+
+.cards-category .card-5 {
+    margin: 65px 92px 95px 30px;
+    display: grid;
+    gap: 30px;
+}
+
+.cards-category .card-5 svg {
+    margin: 12px 10px 12px 10px;
+}
+
+.articles-wrapper {
+    margin: 0 auto;
+    height: 100%;
+    width: 1250px;
+    display: grid;
+    gap: 80px;
+}
+
+
+.articles-wrapper .article {
+    display: grid;
+    gap: 30px;
+}
+
+.article .container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article .container div {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.article .container div h3 {
+    color: #2B2C34;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.article .container div p {
+    color:#2B2C34;
+    text-align: right;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.article .items {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article .item {
+    width: 300px;
+    height: 425px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #FFFFFE;
+    box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
+
+}
+
+.article .item > div {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.article .item > h4 {
+    margin: 25px 0 80px 0;
+
+    color: #2B2C34;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.article .item h5 {
+    color:#2B2C34;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.article .item > div p {
+    color:#2B2C34;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.items div:nth-child(2) h4 {
+    margin: 25px 0 55px 0;
+}
+
+.items div:nth-child(3) h4 {
+    margin: 25px 0 30px 0;
+}
+
+.items div:nth-child(4) h4 {
+    margin: 25px 0 55px 0;
+}
+
+.articles-wrapper button {
+    padding: 20px 23px 19px 23px;
+    border-radius: 8px;
+    background:#6246EA;
+    color: #FFFFFE;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+
+    height: 64px;
+    width: 165px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-self: center;
+}
+
+.subscribe-wrapper {
+    margin: 0 auto;
+    height: 100%;
+    width: 1250px;
+    display: grid;
+    place-items: center;
+    gap: 30px;
+}
+
+.subscribe-wrapper div:nth-child(1) {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #FFFFFE;
+    display: grid;
+    place-items: center;
+}
+
+.subscribe-wrapper div:nth-child(2){
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+
+.subscribe-wrapper h2 {
+    text-align: center;
+    color: #2B2C34;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.subscribe-wrapper p {
+    color:  #C0C0C0;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.subscribe-wrapper form {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+}
+
+.subscribe-wrapper form #email-2 {
+    height: 67px;
+    width: 444px;
+    padding: 21px 200px 21px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #FFFFFE;
+}
+
+.subscribe-wrapper form #email-2::placeholder {
+    color:  #C0C0C0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.subscribe-wrapper form #subscribe-2 {
+    height: 67px;
+    width: 145px;
+    padding: 20px 23px 19px 23px;
+    border: none;
+    border-radius: 8px;
+    background:  #6246EA;
+
+    color:  #FFFFFE;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.footer-wrapper {
+    margin: 0 auto;
+    height: 100%;
+    width: 1250px;
+    display: grid;
+    place-items: center;
+}
+
+.footer-wrapper .container {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: start;
+    gap: 160px;
+}
+
+.footer-wrapper p {
+    justify-self: start;
+    color: #2B2C34;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container aside:nth-of-type(1) {
+    display: grid;
+    gap: 20px;
+}
+
+.container aside:nth-of-type(1) p {
+    color: #2B2C34;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-wrapper .container aside .icons img {
+    margin-right: 30px;
+}
+
+.footer-wrapper .container aside:nth-of-type(2) {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 95px;
+}
+
+.footer-wrapper .container aside:nth-of-type(2) div {
+    display: grid;
+    gap: 25px;
+    align-content: start;
+}
+
+.footer-wrapper .container aside:nth-of-type(2) div ul {
+    display: grid;
+    gap: 20px;
+}
+
+.footer-wrapper .container aside:nth-of-type(2) div h3 {
+    color: #2B2C34;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.footer-wrapper .container aside:nth-of-type(2) div a {
+    color: #2B2C34;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+

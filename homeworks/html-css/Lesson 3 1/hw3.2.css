@@ -1,0 +1,65 @@
+/*body {*/
+/*    margin: 0;*/
+/*}*/
+
+/*header {*/
+/*    height: 50vh;*/
+/*    background-color: pink;*/
+/*    color: black;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    flex-direction: column;*/
+/*    gap: 5px;*/
+/*}*/
+
+/*footer {*/
+/*    height: 50vh;*/
+/*    background-color: black;*/
+/*    color: white;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    flex-direction: column;*/
+/*    gap: 5px;*/
+/*}*/
+
+/*.logo {*/
+/*    font-size: 30px;*/
+/*}*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    font-family: Arial, sans-serif;
+}
+
+section p {
+    width: 80%;
+}
+
+.top-section {
+    background-color: pink;
+}
+
+.bottom-section {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+

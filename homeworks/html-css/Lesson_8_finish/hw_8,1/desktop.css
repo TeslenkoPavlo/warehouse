@@ -1,0 +1,39 @@
+body {
+    font-family: "Inter", sans-serif ;
+}
+
+.wrapper {
+    margin: 64px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.item {
+    text-align: center;
+}
+
+.item h3 {
+    margin: 20px 0 15px 0;
+    color:  #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 24px */
+}
+
+.item p {
+    color:  #3C3C43;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 15.6px */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}

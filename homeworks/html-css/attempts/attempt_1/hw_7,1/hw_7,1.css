@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 132px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 319px;
+    height: 492px;
+    border: 4px solid #554C4C;
+    background: rgba(217, 217, 217, 0.30);
+
+}
+
+.card div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 4px solid #554C4C;
+    position: absolute;
+    top: -50px;
+    border-radius: 50%;
+}
+
+.card h1 {
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card p {
+    width: 211px;
+    color: #000;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+body div:nth-child(2) {
+    border: 4px solid #65856E;
+}
+
+body div:nth-child(2) div {
+    border: 4px solid #65856E;
+}

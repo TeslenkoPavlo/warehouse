@@ -1,0 +1,44 @@
+/*@media screen and (max-width: 480px ) {*/
+
+/*    body {*/
+/*        overflow: visible;*/
+/*        height: auto;*/
+/*        padding: 32px 0;*/
+/*    }*/
+
+/*    .wrapper {*/
+/*        margin: auto;*/
+/*        height: 2194px;*/
+/*        width: 343px;*/
+/*        gap: 40px;*/
+/*    }*/
+
+/*    .items-1, .items-2 {*/
+/*        flex-direction: column;*/
+/*        gap: 40px;*/
+/*    }*/
+
+/*    .item {*/
+/*        width: 343px;*/
+/*    }*/
+
+/*}*/
+
+@media screen and (max-width: 480px) {
+
+    .wrapper {
+        margin: auto;
+        padding: 32px 16px;
+        gap: 40px;
+    }
+
+    .items {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+

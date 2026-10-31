@@ -1,0 +1,21 @@
+.grid-container {
+    display: grid;
+    height: 400px;
+    background-color: grey;
+    border: 1px solid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 100px);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.item {
+    background-color: lightpink;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}

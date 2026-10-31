@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+    <link rel="stylesheet" href="lesson6.6.css">
+</head>
+<body>
+
+<form class="form-registration">
+    <label for="name">Write your name: </label>
+    <input type="text" name="name" id="name"  placeholder="Ivan" required><sup>*</sup>
+
+    <label for="email">Write your email: </label>
+    <input type="email" name="email" id="email" placeholder="example@gmail.com" required><sup>*</sup>
+
+    <label for="password">Write your password: </label>
+    <input type="password" name="password" id="password" placeholder="1234" required><sup>*</sup>
+
+    <label for="age">Write your age:</label>
+    <input type="number" name="age" id="age" placeholder="age" min="18" max="100">
+
+    <input type="file" name="age">
+
+    <label>Sex</label>
+    <label><input type="radio" name="gender" value="male">Male</label>
+    <label><input type="radio" name="gender" value="female">Female</label>
+
+    <label>
+        <input type="checkbox" name="newsletter"> Subscribe to the newsletter
+    </label>
+
+    <label for="country">Country</label>
+    <select name="country" id="country">
+        <option value="ukraine">Ukraine</option>
+        <option value="poland">Poland</option>
+        <option value="usa">the USA</option>
+        <option value="china">China</option>
+        <option value="germany">Germany</option>
+    </select>
+
+    <label for="phone"></label>
+    <select name="phone" id="phone">
+        <optgroup label="Apple">
+            <option value="x">Iphone X</option>
+            <option value="xr">Iphone XR</option>
+            <option value="xs">Iphone XS</option>
+        </optgroup>
+        <optgroup label="Samsung">
+            <option value="x">Iphone X</option>
+            <option value="xr">Iphone XR</option>
+            <option value="xs">Iphone XS</option>
+        </optgroup>
+    </select>
+
+    <label for="comment"></label>
+    <textarea id="comment" rows="4" cols="30"></textarea>
+
+   <div>
+       <input type="submit" value="Send">
+       <input type="reset" value="Reset">
+   </div>
+
+</form>
+
+</body>
+</html>

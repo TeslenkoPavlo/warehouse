@@ -1,0 +1,16 @@
+h1+p {
+    color: olive;
+}
+
+h1~p {
+    color: red;
+}
+
+div p {
+    color: darkblue;
+}
+
+div>div>p {
+    color: red;
+}
+

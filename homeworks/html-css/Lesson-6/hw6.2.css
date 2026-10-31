@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oleo+Script:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Inter, sans-serif;
+}
+
+.wrapper {
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 63px;
+}
+
+div.wrapper>h2 {
+    font-family: Oleo Script, sans-serif;
+    font-weight: 400;
+    font-style: Italic;
+    font-size: 60px;
+}
+
+.form-signin {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"] {
+    width: 260px;
+    height: 30px;
+    border: none;
+    background-color: #f3f3f3;
+    border-radius: 2px;
+}
+
+input[type="text"]::placeholder {
+    padding-left: 5px;
+}
+
+input[type="password"] {
+    width: 260px;
+    height: 30px;
+    border: none;
+    background-color: #f3f3f3;
+    border-radius: 2px;
+}
+
+input[type="password"]::placeholder {
+    padding-left: 5px;
+}
+
+input[type="submit"] {
+    background-color: #31bff1;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+div.wrapper>p {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: darkgray;
+}
+
+a#facebook {
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+a#facebook::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABR0lEQVR4nO3Zz0oDMRAG8DxZUsVbWzaD4gMpggf1Jj36EE5WEGq9eRG01PoA3jwsuNteKtiRVbT+oaVJ102C88Ecw36/3eSSFYLD4XCCTkNjIgEvJeBYgaE6RgKOJZieTNL2SuWVNvt1lVbzRuOe85v3Xh4+EKZlDSi3TUCAC3uAxpH34vA5hTUggNL0dRigKpj1rZQOOgO6vcsoLyY0ndK3BA1Y20zp6vqRFkWFDDjsDBaWDx7QH2YUNaAYPf8qvHN0QxvbZ0ut9w54+Xliid7OxbLrvQNst4xiAPxN6Xl5yidxA/rDLG7A6flD3IDjk/vwANEfYsUAwwBiADCAGKAYYBgg/h1AVny1uBoAc3sAmF7VX8F5NHbtAUna9l4c3qcB2BQuKX8u+C4vwew6lZ8hTKu8n6/zul2Wz9LYdX7zHA6HI+rKKwESa+xUAU4/AAAAAElFTkSuQmCC');
+    background-size: cover;
+}
+
+a#facebook:link {
+    text-decoration: none;
+    color: rgb(0 0 139 / 0.84);
+}
+
+a#facebook:visited {
+    color: rgb(0 0 139 / 0.84);
+}
+
+a#forget {
+    display: inline-flex;
+    margin: 10px auto;
+    font-size: 10px;
+}
+
+a#forget:link {
+    text-decoration: none;
+    color: lightblue;
+}
+
+a#forget:visited {
+    color: rgb(0 0 139 / 0.84);
+}
+
+div.envelope {
+    border: 1px solid lightgray;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+div.envelope>a {
+    font-weight: bold;
+}
+
+div.envelope>a:link {
+    text-decoration: none;
+    color: lightblue;
+}
+
+div.envelope>a:visited {
+    color: #08b7e4;
+}
+
+
