@@ -1,0 +1,29 @@
+/*@media screen and (min-width: 481px) and (max-width: 768px) {*/
+
+/*    .wrapper {*/
+/*        margin: auto;*/
+/*        height: 100%;*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .item {*/
+/*        width: 218px;*/
+/*    }*/
+
+/*}*/
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .wrapper {
+        margin: 32px auto;
+    }
+
+    .item {
+        width: 218px;
+    }
+}
+
+
+
+
+
+

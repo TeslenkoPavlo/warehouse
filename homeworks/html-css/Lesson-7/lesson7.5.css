@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 100vh;
+}
+
+.card {
+    width: 200px;
+    height: 250px;
+    background-color: lightslategray;
+    position: relative;
+}
+
+.sale {
+    width: 70px;
+    height: 45px;
+    background-color: salmon;
+    position: absolute;
+    top: -20px;
+    left: -25px;
+}
