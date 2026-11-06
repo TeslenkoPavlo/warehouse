@@ -250,5 +250,67 @@ CSS властивості
     height: 100px;
     width: 100px;
     background-color: yellow;
+
+    /*border - визначає товщину, стиль лінії
+    колір лінії
+    має такі значення:
+    - товщина (2px)
+    - стиль лінії (solid)
+    - колір лінії (black)*/
+    border: 2px solid black;
+
+    /*border-radius задає заокругленість
+    елементу*/
+    border-radius: 10px;
 }
 
+/*hover - псевдоклас, який дозволяє
+змінювати стиль елемента
+при наведені на нього, тобто
+element:hover {style}
+*/
+.rectangle-1:hover {
+    background-color: red;
+}
+
+/*стиль лінії суцільний*/
+.solid {
+    border: 2px solid black;
+}
+
+/*стиль лінії пунктирний*/
+.dashed {
+    border: 2px dashed black;
+}
+
+/*стиль лінії у крапку*/
+.dotted {
+    border: 2px dotted black;
+}
+
+/*стиль лінії подвійна лінія
+(треба призумити щоб побачити її)
+)*/
+.double {
+    border: 2px double black;
+}
+
+/*стиль лінії вставка (всередину)*/
+.inset {
+    border: 20px inset;
+}
+
+/*стиль лінії орнамент (назовні)*/
+.outset {
+    border: 20px outset;
+}
+
+/*стиль лінії жолобок*/
+.groove {
+    border: 20px groove;
+}
+
+/*стиль лінії гребінь*/
+.ridge {
+    border: 20px ridge;
+}
