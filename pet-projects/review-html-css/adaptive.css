@@ -1,0 +1,27 @@
+/*smaller smartphones*/
+@media screen and (max-width: 480px) {
+
+}
+
+/*tablets & larger smartphones*/
+/*
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+
+    }
+*/
+
+/*laptops, larger tablets in landscape, and small desktop*/
+
+/*
+    @media screen and (min-width: 769px) and (max-width: 1279px) {
+
+    }
+*/
+
+/*larger desktops and monitors*/
+
+/*
+    @media screen and (min-width: 1280px) {
+
+    }
+*/

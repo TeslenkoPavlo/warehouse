@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--HTML/CSS. Матеріали 1.-->
+<h1>Material 1</h1>
+<!--CSS padding-->
+<div class="wrapper">
+    <div class="rectangle"></div>
+</div>
+
+<!--CSS margin-->
+<div class="wrapper-margin">
+    <div class="circle">
+    </div>
+</div>
+
+<!--HTML tags-->
+<p>paragraph тег р створює окремий
+        абзац тексту
+</p>
+<!--
+    <h1>...<h6>
+    - теги для заголовків, котрі мають
+    різний рівень важливості, де
+    <h1> - найважливіший заголовок
+    <h6> - найменьш важливий
+-->
+<h1>h1</h1>
+<h2>h2</h2>
+<h3>h3</h3>
+<h4>h4</h4>
+<h5>h5</h5>
+<h6>h6</h6>
+
+<img src="https://plus.unsplash.com/premium_photo-1791245793746-1bc6c7b48acb?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="water">
+
+<!--<b> - тег жирний
+       <i> - курсивний тег
+       <s> - перекреслений текст тег
+       <sub> - нижній текст
+       (як цифри в хімічних елементів
+       наприклад H2O)
+       <sup> - навпаки від тегу <sub>
+       верхній текст
+       <code> - форматування для коду (також
+       потрібен для семантики та для
+       сторонніх бібліотек, щоб зробити підсвітку коду, оскільки вони очікують
+       саме тег <code>)
+       <pre> - це як тег <p>, але зберігає повністю форматування написаного тексту, котрий був написаний в редакторі тексту / коду.
+        <span> - рядковий <div>
+        <br> - розрив рядка, тобто перенесення
+        текста на новий рядок, без створення
+        нового абзацу
+        <hr> - горизонтальна лінія, яка може слугувати для розділення контенту на сторінці
+        <a> - тег для створення посилання
+        (наприклад, текст: текст, при натисканні на це слово буде перехід на іншу сторінку)
+        в атрибуті href вставляється посилання
+-->
+<p>The U.S. is a country of 50 states covering a vast swath of <b>North</b> America, with Alaska in the <i>northwest</i> and <s>Hawaii</s> extending the <sub>nation’s</sub> presence
+    <sup>into</sup> the Pacific Ocean. Major Atlantic <code>cout << "something";</code> cities are <pre>New York</pre>, a global finance and culture center, and capital Washington,
+    DC. <br>
+    Midwestern metropolis Chicago is known for influential <span style="color:red;">architecture</span> and on the west coast, Los Angeles' Hollywood is famed for filmmaking.
+
+<hr>
+
+<pre>
+    <code>
+        function calculateSum(a, b){
+            // Відступи збережуться завдяки
+                тегу pre
+            let sum a + b;
+            return sum;
+        }
+    </code>
+</pre>
+
+<a href="https://plus.unsplash.com/premium_photo-1791245793746-1bc6c7b48acb?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D">water</a>
+
+<!--Різниця між
+      рядковими (inline) тегами та
+      блочними (block) тегами
+      (блочні елементи переносять текст на
+      новий рядок)
+
+      Рядковий тег (<b>, <i>, <a>, <span>)
+      розміщуються поруч із текстом
+      і займають тільки той простір, котрий
+      необхідний для вмісту всередині тегу.
+      inline tags не створюють нового блоку і
+      не переносять текст на новий рядок.
+
+      Блочний тег (<p>, <h1>, <img>)
+      створює окремий блок на сторінці, який
+      розтягується на всю ширину
+       сторінки (доступну ширину).
+      Весь контент всередині блоку
+      розташовується вертикально.
+      І завжди, кожен створений блочний
+      елемент переноситься на новий рядок.
+      -->
+
+<!--Material 2-->
+<h1>Material 2</h1>
+
+<div class="flex-container">
+    <div class="rectangle-1 solid"></div>
+    <div class="rectangle-1 dashed"></div>
+    <div class="rectangle-1 dotted"></div>
+    <div class="rectangle-1 double"></div>
+    <div class="rectangle-1 inset"></div>
+    <div class="rectangle-1 outset"></div>
+    <div class="rectangle-1 groove"></div>
+    <div class="rectangle-1 ridge"></div>
+</div>
+
+<!--Material 3-->
+<h1>Material 3</h1>
+
+<!--Семантичні теги визначають
+вигляд і пояснюють вміст
+вебсторінки
+для пошукових систем задля
+покращення
+її ранжування
+-->
+
+<!--header
+верхня частина сторінки або блок
+заголовка, хедер може містити логотип,
+навігацію, пошукову форму, корзинку,
+вхід в акаунт
+-->
+
+<!--nav
+навігаційний тег, який зазвичай містить
+посилання,
+інформацію про сторінки або окремі
+розділу вебсайту
+-->
+
+<!--main
+тег, який містить головний контент
+вебсторінки
+-->
+
+<!--section
+логічна секція чи частина сторінки,
+яка може мати свій контент
+-->
+
+<!--article
+незалежний тег від контексту сторінки,
+може мати свою унікальну тему,
+наприклад, новини, статті.
+-->
+
+<!--aside
+бічний блок, який має додаткову
+інформацію, але при цьому не містить
+основний контент сторінки
+-->
+
+<!--footer
+нижня частина сторінки,
+яка містить посилання на соціальні
+мережі, контакти, автора, додаткові посилання
+-->
+
+<!--address
+тег, який містить
+контактну інформацію
+-->
+
+<!--Абсолютні одиниці
+вимірювання
+-->
+<!--
+пікселі (px) -
+умовний 1 px = приблизно 1 px
+на екрані
+пристрою, але на великих екранах
+може бути умовний 1px = реальні
+1..2..3 px
+та більше реальних пікселів
+екрана
+
+Сантиметри (cm)
+
+Міліметри (mm)
+
+Дюйми (in) - 96px
+
+Пункти (pt) - 1/72 дюйма
+
+Піки (pc) - 12 пунктів
+або 1/6 дюйма
+-->
+
+<!--Відносні одиниці вимірювання-->
+
+<!--
+Ем(em) -> 1em = поточний розмір
+шрифта
+батьківського елемента
+
+Рем(rem) - аналогічно до em, але
+використовується розмір тегу
+ <html>
+
+Відсотки (%) - дозволяє задавати
+розмір в частках від іншої
+величини
+
+vh (viewport height) -
+1vh = 1% видимої висоти вікна
+браузера
+
+vw(viewport width) -
+1vw = 1% видимої ширини вікна
+браузера
+-->
+
+<!--Material 4-->
+<h1>Material 4</h1>
+<!--конвертатор в viewport-->
+
+<!--https://cssunitconverter.vercel.app/px-to-vw-->
+
+<!--https://cssunitconverter.vercel.app/px-to-vh-->
+
+<!--Material 5-->
+<h1>Materil 5</h1>
+
+<!--@keyframes - це CSS правило,
+завдяки якому створюється анімація
+Також можна визначати проміжні
+кроки анімації
+Кожен крок визначається у
+0%...100%
+-->
+
+<div class="rectangle-animation">
+
+</div>
+
+<div class="circle-animation">
+<!--Додаткова інформація про
+    transform: translateZ(-20px);
+    transform: translate3d(-20px,
+    -20px, -20px);
+-->
+</div>
+
+<!--Material 6-->
+<h1>Material 6</h1>
+
+<!--Комбінаторні селектори CSS-->
+<div class="tr">
+    <span>text</span>
+    <p>text</p>
+    <p>text</p>
+    <p>text</p>
+    <p>text</p>
+</div>
+
+<!--Вага селекторів CSS-->
+<ul>
+    <!--1000 балів за inline style-->
+    <li class="lis" id="lis"
+    style="color: darkblue;">selector</li>
+</ul>
+
+<!--Псевдокласи/елементи структурного
+вибору елементів
+-->
+
+<hr>
+
+<div class="choose-element">
+    <p>text</p>
+    <p>text</p>
+    <p>text</p>
+    <p>text</p>
+    <span>
+        text_spanqqqqqqqqqqqqqqqqqqqqq
+        <br>jhgkhkjhjhllli
+        <br>
+    </span>
+    <span>text_span<br></span>
+    <span>text_span<br></span>
+    <a href="#">link<br></a>
+    <a href="#">link</a>
+    <p>text</p>
+    <a>gfdgd</a>
+</div>
+
+<hr>
+
+<div class="before-after-content">
+    <p>text</p>
+</div>
+
+<hr>
+
+<div class="style-link">
+    <a href="#">link</a>
+    <p>text</p>
+    <ul>
+        <li>marker</li>
+    </ul>
+</div>
+
+<hr>
+
+<div class="child">
+    <p>element</p>
+    <p>element</p>
+    <p>element</p>
+    <p>element</p>
+    <p>element</p>
+    <p>element</p>
+    <p>element</p>
+    <p>element</p>
+    <p>element</p>
+</div>
+
+<!--transition-->
+
+<div class="transition-animation">
+<!--
+- linear - default value
+значення змінюється з однаковою
+швидкість протягом усього часу
+анімації
+- ease - повільно -> швидко -> повільно
+стандартна функція зміни часу для багатьох браузерів
+- ease-in - повільно -> швидко
+- ease-out - швидко -> повільно
+- ease-in-out - повільно -> швидко
+ -> повільно
+ - cubic-bezeir() - створює кастомну
+ тривалість анімації
+ значення в діапазоні від 0 до 1
+ наприклад,
+ cubic-bezeir(0.2, 0.3, 0.4, 1)
+
+-->
+</div>
+
+<hr>
+<br>
+<br>
+<br>
+<br>
+
+<!--тег для створення форми-->
+<form id="form-challenge">
+    <!--ведення тексту (ім'я користувача)
+     або коментар-->
+    <input
+        type="text"
+        name="username"
+        placeholder="Enter your name"
+    >
+<!--сховане введення значення-->
+    <input
+       type="password"
+       id="pwd"
+       name="pwd"
+    >
+<!--вибирання опції наприклад
+    підписка на новини-->
+    <input
+        type="checkbox"
+        id="vehicle1"
+        name="vehicle1"
+        value="Bike"
+    >
+<!--кнопка для вибору варіанту одного
+із декількох-->
+    <input
+        type="radio"
+        id="html"
+        name="html"
+        value="HTML"
+    >
+<!--створення кнопки
+можна запускати js функції-->
+    <input
+        type="button"
+        onclick="alert('Hello world!')"
+        value="Click me!"
+    >
+
+<!--відправлення даних на сервер
+після їх заповнення-->
+    <input
+        type="submit"
+        value="Submit"
+    >
+
+<!--скидання форми на їхні початкові
+значення-->
+    <input
+        type="reset"
+        value="Reset"
+    >
+
+<!--вибрання файла користувача
+для відправлення на сервер-->
+    <input
+        type="file"
+        id="file"
+        name="file"
+    >
+
+<!--відправлення форми із
+зображенням-->
+    <input
+        type="image"
+        src=""
+        alt="Submit"
+    >
+
+<!--поле для введення тільки чисел-->
+    <input
+        type="number"
+        id="number"
+        name="number"
+        min="1"
+        max="5"
+    >
+    <br>
+<!--випадаючий список
+варіант відповіді
+тег <option>-->
+    <select id="cars" name="cars">
+        <option value="BMW">
+            BMW
+        </option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<!--Щоб радіокнопка працювали
+вгрупі, повинні мати однакове
+значення атрибуту name-->
+<!--Чекбокам не потрібне
+однакве значення name
+оскільки користува
+може обирати декілька варіантів
+відповіді-->
+
+<!--вибір коліру-->
+    <input
+        type="color"
+        id="color"
+        name="color"
+    >
+
+<!--вибір дати -->
+    <input
+        type="date"
+        id="date"
+        name="date"
+    >
+
+    <!--вибір конкретної години-->
+    <input
+        type="time"
+        id="time"
+        name="time"
+    >
+
+    <!--вибір файла з комп'ютера -->
+    <input
+        type="file"
+        id="file_1"
+        name="file"
+    >
+</form>
+
+<!--Material 7-->
+<h1>Material 7</h1>
+
+<div class="block static"></div>
+<div class="block relative"></div>
+<div>
+    <div class="block absolute"></div>
+</div>
+<div class="block fixed"></div>
+<div class="block sticky"></div>
+
+
+<!--Material 9-->
+
+<!--https://getbootstrap.com/docs/5.0/getting-started/introduction/-->
+
+</body>
+</html>
