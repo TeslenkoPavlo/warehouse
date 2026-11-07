@@ -302,5 +302,194 @@ vw(viewport width) -
     <a>gfdgd</a>
 </div>
 
+<hr>
+
+<div class="before-after-content">
+    <p>text</p>
+</div>
+
+<hr>
+
+<div class="style-link">
+    <a href="#">link</a>
+    <p>text</p>
+    <ul>
+        <li>marker</li>
+    </ul>
+</div>
+
+<hr>
+
+<div class="child">
+    <p>element</p>
+    <p>element</p>
+    <p>element</p>
+    <p>element</p>
+    <p>element</p>
+    <p>element</p>
+    <p>element</p>
+    <p>element</p>
+    <p>element</p>
+</div>
+
+<!--transition-->
+
+<div class="transition-animation">
+<!--
+- linear - default value
+значення змінюється з однаковою
+швидкість протягом усього часу
+анімації
+- ease - повільно -> швидко -> повільно
+стандартна функція зміни часу для багатьох браузерів
+- ease-in - повільно -> швидко
+- ease-out - швидко -> повільно
+- ease-in-out - повільно -> швидко
+ -> повільно
+ - cubic-bezeir() - створює кастомну
+ тривалість анімації
+ значення в діапазоні від 0 до 1
+ наприклад,
+ cubic-bezeir(0.2, 0.3, 0.4, 1)
+
+-->
+</div>
+
+<hr>
+<br>
+<br>
+<br>
+<br>
+
+<!--тег для створення форми-->
+<form id="form-challenge">
+    <!--ведення тексту (ім'я користувача)
+     або коментар-->
+    <input
+        type="text"
+        name="username"
+        placeholder="Enter your name"
+    >
+<!--сховане введення значення-->
+    <input
+       type="password"
+       id="pwd"
+       name="pwd"
+    >
+<!--вибирання опції наприклад
+    підписка на новини-->
+    <input
+        type="checkbox"
+        id="vehicle1"
+        name="vehicle1"
+        value="Bike"
+    >
+<!--кнопка для вибору варіанту одного
+із декількох-->
+    <input
+        type="radio"
+        id="html"
+        name="html"
+        value="HTML"
+    >
+<!--створення кнопки
+можна запускати js функції-->
+    <input
+        type="button"
+        onclick="alert('Hello world!')"
+        value="Click me!"
+    >
+
+<!--відправлення даних на сервер
+після їх заповнення-->
+    <input
+        type="submit"
+        value="Submit"
+    >
+
+<!--скидання форми на їхні початкові
+значення-->
+    <input
+        type="reset"
+        value="Reset"
+    >
+
+<!--вибрання файла користувача
+для відправлення на сервер-->
+    <input
+        type="file"
+        id="file"
+        name="file"
+    >
+
+<!--відправлення форми із
+зображенням-->
+    <input
+        type="image"
+        src=""
+        alt="Submit"
+    >
+
+<!--поле для введення тільки чисел-->
+    <input
+        type="number"
+        id="number"
+        name="number"
+        min="1"
+        max="5"
+    >
+    <br>
+<!--випадаючий список
+варіант відповіді
+тег <option>-->
+    <select id="cars" name="cars">
+        <option value="BMW">
+            BMW
+        </option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<!--Щоб радіокнопка працювали
+вгрупі, повинні мати однакове
+значення атрибуту name-->
+<!--Чекбокам не потрібне
+однакве значення name
+оскільки користува
+може обирати декілька варіантів
+відповіді-->
+
+<!--вибір коліру-->
+    <input
+        type="color"
+        id="color"
+        name="color"
+    >
+
+<!--вибір дати -->
+    <input
+        type="date"
+        id="date"
+        name="date"
+    >
+
+    <!--вибір конкретної години-->
+    <input
+        type="time"
+        id="time"
+        name="time"
+    >
+
+    <!--вибір файла з комп'ютера -->
+    <input
+        type="file"
+        id="file_1"
+        name="file"
+    >
+</form>
+
 </body>
 </html>

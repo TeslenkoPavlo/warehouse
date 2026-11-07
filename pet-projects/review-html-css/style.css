@@ -554,3 +554,114 @@ li {
 .choose-element span:nth-last-child(2) {
     color: blue;
 }
+
+/*------------*/
+
+/*використовується для вставки
+вмісту перед елементом*/
+.before-after-content p::before {
+    content: "!!! ";
+    font-weight: bold;
+    color: red;
+}
+
+/*додає вміст після основного
+вмісту елемента*/
+.before-after-content p::after {
+    content: " the end";
+    font-style: italic;
+    color: red;
+}
+
+/*-----*/
+
+/*стилізація посилання*/
+
+/*стилізація посилання, котре
+ще не було відвідане користувачем*/
+.style-link a:link {
+    text-decoration: none;
+    color: green;
+}
+
+/*стилізація посилання, яке було
+відвідане*/
+.style-link a:visited {
+    text-decoration: none;
+    color: purple;
+}
+
+/*стилізація тексту, який виділено
+користувачем
+*/
+.style-link p::selection {
+    color: yellow;
+    background-color: black;
+}
+
+/*стилізація маркера списку*/
+.style-link li::marker {
+    color: blue;
+}
+
+
+/*nth-child() -
+обирає дочірній елемент в
+залежності від позиції
+батьківського елемента
+
+- n - обирає кожен n-й елемент,
+де n ціле число
+- an - обирає кожні елементи,
+де 'а' ціле число, n змінна яка
+представляє позицію елемента
+наприклад, 3n вибирає кожен 3
+дочірній елемент
+- an + b де b змінна яка вказує
+звідки почати вибірку
+наприклад, 4n + 2 - вибрати кожний
+4 елемент починаючи з 2
+- odd кожен непарний елемент
+- even кожен парний елемент
+*/
+.child :nth-child(2n){
+    color: red;
+}
+
+/*transition*/
+@keyframes animt {
+    from {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1.4);
+    }
+}
+
+.transition-animation {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    animation: animt 2s ease
+    infinite alternate;
+    background-color: pink;
+    border-radius: 50%;
+    border: 2px dotted black;
+}
+
+/*----------*/
+
+#form-challenge {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#form-challenge input {
+    width: 100px;
+}
+
+#form-challenge select {
+    width: 100px;
+}
