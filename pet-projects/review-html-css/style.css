@@ -665,3 +665,69 @@ li {
 #form-challenge select {
     width: 100px;
 }
+
+/*---------*/
+
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border: 2px dashed black;
+    margin-bottom: 30px;
+}
+
+
+/*default value
+елементи розміщуються в тому
+порядку, в якому вони
+з'являються в html коді*/
+.static {
+    position: static;
+}
+
+
+/*елементи можна переміщувати
+завдяки властивостям
+ top, right, left, bottom,
+ НЕ вибивається з HTML
+ потоку
+ */
+.relative {
+    position: relative;
+    top: 5px;
+    right: 20px;
+    left: 15px;
+    bottom: 10px;
+}
+
+/*ВИБИВАЄТЬСЯ з HTML
+потоку
+розміщується відносно
+батьківського елемента
+також можна використовувати
+top, right, bottom, left*/
+.absolute {
+    position: absolute;
+}
+
+/*фіксує намертво
+елемент в html потоці
+при скролінгу завжди залишається
+на своєму місці
+також можна його розміщувати
+завдяки top, bottom, right, left*/
+.fixed {
+    position: fixed;
+}
+
+
+/*діє як абсолютний елемент
+доти, поки користувач не
+прокрутить до певної
+точки сторінки
+потім елемент повертається
+до нормального потоку,
+коли прокручує назад*/
+.sticky {
+    position: sticky;
+}
