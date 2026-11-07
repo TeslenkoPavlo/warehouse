@@ -472,3 +472,85 @@ div p {
 - встановлює відстань між символами
 тексту
 */
+
+/*Вага селекторів CSS*/
+
+/*1 бал  за html-тег*/
+li {
+    color: purple;
+}
+
+/*10 балів за використання класа*/
+.lis {
+    color: brown;
+}
+
+/*100 балів за використання ідентифікатора*/
+#lis {
+    color: gray;
+}
+
+/*Псевдокласи/елементи структурного*/
+/*вибору елементів*/
+
+/*вибере перший будь-який
+дочірній елемент або
+вибере перший дочірній елемент,
+вказаного тегу, наприклад:
+.choose-element p:first-child { color: red; }
+*/
+.choose-element :first-child {
+    color: red;
+}
+
+/*стилізує першу літеру окремо
+від решту тексту у першому блочному
+нащадку
+якщо треба зробити першу літеру іншою
+в кожному конкретному тегу, наприклад
+.choose-element p::first-letter { color: green; }
+*/
+.choose-element::first-letter {
+    color: green;
+}
+
+.choose-element span {
+    display: inline-block;
+}
+
+/*стилізує перший рядок
+тексту окремо від інших*/
+.choose-element span::first-line {
+    color: red;
+}
+
+/*застосовує стилізацію до останнього
+елемента з вказаним типом
+на тому ж рівні вкладеності*/
+.choose-element p:last-of-type {
+    color: blue;
+}
+
+/*обирає останній дочірній елемент*/
+.choose-element :last-child {
+    color: green;
+}
+
+/* обирає елемент, який є n-дочірнім
+    у свого батька.
+    - odd - кожний непарний елемент
+    - even - кожний парний елемент
+    також можна групувати за тегом,
+    наприклад
+    .choose-element p:nth-child(2)
+    { color: purple; }
+*/
+.choose-element :nth-child(2) {
+    color: purple;
+}
+
+/*обирає елемент який є n-дочірнім
+у свого батька, починаючи з кінця*/
+.choose-element span:nth-last-child(2) {
+    color: blue;
+}
