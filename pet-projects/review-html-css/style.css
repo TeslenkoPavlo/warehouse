@@ -314,3 +314,115 @@ element:hover {style}
 .ridge {
     border: 20px ridge;
 }
+
+/*Material 5*/
+
+@keyframes rectangle {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: green;
+    }
+}
+
+.rectangle-animation {
+    height: 200px;
+    width: 200px;
+    /*animation:
+    назва, тривалість,
+    тип, к-сть повторів
+
+    infinity - безкінечна анімація
+    alternate - після досягнення кінцевої точки
+    анімація буде повторюватися у зворотному
+    напрямку
+    */
+    animation: rectangle 20s linear 5 alternate;
+
+    /*background-color: black;*/
+}
+
+.circle-animation {
+    margin: 10px auto 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 2px dashed red;
+    border-radius: 50%;
+    background-color: orange;
+    /*Типи анімації
+    - linear - рівномірна швидкість
+    від початка до кінця
+    - ease - повільно -> швидко -> повільно
+    (default value)
+    - ease-in - повільно -> прискорюється
+    до кінця
+    - ease-out - швидко -> сповільнюється
+    до кінця
+    - ease-in-out - повільно -> швидко ->
+    повільно
+    - step-start - кадр змінюється одразу
+    -> на самому початку
+    - step-end - кадр змінюється останньої
+    миті -> в самому кінці кроку
+    */
+    animation: circle-animation
+    20s ease infinite alternate;
+}
+
+@keyframes circle-animation {
+    from {
+        /*Оберт*/
+        transform: rotate(180deg);
+    }
+    20% {
+        /*Збільшення на 20%*/
+        transform: scale(1.2);
+    }
+    30% {
+        /*Збільшення по горизонталі
+        на 30%
+        */
+        transform: scaleX(1.3);
+    }
+    40% {
+        /*Збільшення по вертикалі
+        на 40%
+        */
+        transform: scaleY(1.4);
+    }
+    50% {
+        /*Нахил 20 градусів*/
+        transform: skew(20deg);
+    }
+    60% {
+        /*Нахил по горизонталі 30
+        градусів
+        */
+        transform: skewX(30deg);
+    }
+    70% {
+        /*Нахил по вертикалі 40
+        градусів
+        */
+        transform: skewY(40deg);
+    }
+    80% {
+        /*переміщення елемента по горизонталі
+        та по вертикалі*/
+        transform: translate(20px, 20px);
+    }
+    90% {
+        /*переміщення елемента
+        по горизонталі*/
+        transform: translateX(40px);
+    }
+    to {
+        /*переміщення елемента
+        по вертикалі*/
+        transform: translateY(40px);
+    }
+}
