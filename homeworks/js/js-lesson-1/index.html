@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1></h1>
+
+<!--створення меню користувачів-->
+<ul class="menu"></ul>
+
+<!--тег відео-->
+<video src="" id="videoplayer"></video>
+
+<script>
+
+    // шукає в HTML перший елемент h1
+    // let h1 = document.querySelector('h1');
+    // змінює текст усередині цього заголовка
+    // на слово word
+    // h1.innerText = 'word';
+
+    // let msg = 'lorem ipsum';
+
+    // створює тег <p>
+    // let p = document.createElement('p');
+
+    // додати текст із змінної msg
+    // до тегу <p>
+    // p.innerText = msg;
+
+    // додати до документа, а саме:
+    // до тегу body тег <p>
+    // document.body.append(p);
+
+    // масив елементів
+   // let users = [
+   //     {
+   //       name: 'vasya',
+   //       age: 23,
+   //       status: false
+   //     },
+   //
+   //     {
+   //         name: 'vypsin',
+   //         age: 45,
+   //         status: true
+   //     }
+   // ];
+
+   // створення змінної, яка посилається на
+    // клас .menu
+    // let menu = document.querySelector('.menu');
+
+   // цикл, перебирання користувачів
+    // із масиву користувачів
+    // for (const user of users ) {
+    //     // створення змінної, яка містить
+    //     // створення тегу <li>
+    //     let li = document.createElement('li');
+    //     // тег <li> приймає ім'я
+    //     // користувача
+    //     li.innerText = user.name
+    //
+    //     // після перебирання масиву користувачів
+    //     // додати <li> котрі містять дані користувачів
+    //     menu.append(li);
+    // }
+
+    // let menu = document.querySelector('.menu');
+    // fetch('https://jsonplaceholder.typicode.com/users')
+    //     .then(value => value.json())
+    //     .then(users => {
+    //             for (const user of users) {
+    //                 let li = document.createElement('li');
+    //                 li.innerText = user.name;
+    //                 menu.append(li);
+    //             }
+    //     });
+
+    // Get information about current geolocation
+    // navigator.geolocation.getCurrentPosition(
+    //     position => console.log(position)
+    // )
+
+    // запитуємо дозвіл на використання камери
+    // navigator.mediaDevices.getUserMedia({video: true})
+    //     // виконуємо код, після отримання
+    //     // дозволу користувача
+    //     .then(
+    //     stream => {
+    //         // знаходить html-елемент по id="videoplayer"
+    //         let videoplayer = document.getElementById('videoplayer');
+    //         // передає відеопотік у цей елемент
+    //         videoplayer.srcObject = stream;
+    //         // запускає відтворення відео
+    //         videoplayer.play();
+    //     }
+    // );
+
+</script>
+
+</body>
+</html>
