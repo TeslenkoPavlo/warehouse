@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #FFFFFF;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+.wrapper {
+    width: 1204px;
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 45px;
+    width: 1140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo p {
+    color: #0B132A;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.logo p span {
+    font-weight: 700;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+
+    color: #4F5665;
+}
+
+.sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.sign a {
+    text-decoration: none;
+
+    color: #0B132A;
+    font-weight: 500;
+}
+
+.sign button {
+    width: 150px;
+    height: 45px;
+    background: none;
+    border-radius: 50px;
+    border: 1px solid #F53855;
+
+    color: #F53855;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+/*---hero-section---*/
+
+.hero-section-wrapper {
+    margin-top: 89px;
+    height: 574px;
+    width: 100%;
+    margin-bottom: 104px;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-details {
+    width: 555px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-details h1 {
+    color: #0B132A;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 70px;
+}
+
+.hero-details  h1 span {
+    font-weight: 700;
+}
+
+.hero-details p {
+    color: #4F5665;
+    line-height: 30px;
+}
+
+.hero-details p span {
+    font-weight: 500;
+}
+
+.hero-details div {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-details div button:nth-child(1) {
+    width: 250px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: #F53838;
+
+    color: white;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.hero-details div button:nth-child(2) {
+    top: 25px;
+    position: absolute;
+
+    width: 212px;
+    height: 60px;
+
+    border-radius: 10px;
+    background: rgba(245, 56, 56, 0.35);
+    filter: blur(27px);
+}
+
+img {
+    height: 380px;
+    width: 550px;
+}
