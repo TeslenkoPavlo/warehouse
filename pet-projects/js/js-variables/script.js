@@ -155,3 +155,103 @@ alert(admin);*/
 /*let outPlanetName = 'Earth';
 
 let currentUser;*/
+
+
+/*let message = 'Hello';
+message = 123;*/
+
+// type number
+
+// let num = 123;
+// num = 12.242;
+
+// infinity
+/*alert(1 / 0);
+
+alert(Infinity);*/
+
+// NaN, not a number
+// alert('not' / 2);
+
+// будь-яка подальша операція з NaN повертає NaN
+
+// NaN
+/*alert(NaN + 1);
+alert(3 *NaN);
+alert('not' / 2 -1);*/
+
+// output 1
+// alert(NaN ** 0);
+
+/*console.log(9007199254740991 + 1); // 9007199254740992
+console.log(9007199254740991 + 2); // 9007199254740992
+
+console.log(NaN);*/
+
+/*const BigInt = 1111111111111111111111111111111111111
+11111111111111111111111111111111111
+111111111111111111n;*/
+
+/*let str = 'Hello';
+let str2 = "hello";
+// Зворотні лапки
+let phrase = `phrase ${str}`;*/
+
+/*let name= 'name1';
+
+// output name1
+console.log(`Hello, ${name}!`);
+
+// output 3
+console.log(`result: ${1 + 2}`);*/
+
+// Немає типу char є тільки тип string
+
+/*let nameFiledChecked = true;
+let ageFieldChecked = false;
+
+// Логічне значення можна отримати як результат порівняння
+let isGreater = 4 > 1;
+
+console.log(isGreater);*/
+
+/*// null - нічого, невідоме значення
+let age = null;*/
+
+/*let age;
+ console.log(age);*/
+
+/*let age = 100;
+age = undefined;
+
+console.log(age);*/
+
+/*typeof undefined // "undefined"
+
+typeof 0 // "number"
+
+typeof 10n // "bigint"
+
+typeof true // "boolean"
+
+typeof "foo" // "string"
+
+typeof Symbol("id") // "symbol"
+
+typeof Math // "object"  (1)
+
+typeof null // "object"  (2)
+
+typeof alert // "function"  (3)*/
+
+/*let num;
+
+console.log(typeof null);*/
+
+/*let name = 'pavlo';
+
+console.log(`hello ${1}`);
+
+console.log(`hello ${"name"}`);
+
+console.log(`hello ${name}`);*/
