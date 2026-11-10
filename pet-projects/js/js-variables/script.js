@@ -363,3 +363,157 @@ alert(y - x);
 // Ми маємо
 // унарний оператор -> тільки один операнд
 // бінарний оператор -> тільки два операнда*/
+
+/*console.log(8 % 3);
+console.log(2 ** 2);
+console.log(4 ** (1/2));
+
+let s = "my_" + "string";
+console.log(s);
+console.log('2' + 1);
+console.log('6' / '2');
+// унарний + перетворить значення на цифри
+console.log(+true);
+console.log(+"");
+
+let apples = "2";
+let oranges = "3";
+
+console.log(+apples + +oranges);
+
+let a, b, c;
+
+a = b = c = 2 + 2;
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+let counter = 2;
+counter++;
+console.log(counter);
+
+let counter2 = 2;
+counter2--;
+console.log(counter2);*/
+
+// щоб використовувати значення
+// префіксна форма ++counter щоб використовувати нове збільшене значення
+
+
+/*// префіксна форма, буде обчислено нове збільшене значення
+let counter = 1;
+console.log(2 * ++counter);
+
+
+// постфіксній формі не буде використано збільшене значення
+let counter2 = 1;
+console.log(2 * counter2++);
+
+
+// Тут обчислюється перший вираз 1 + 2 і його результат викидається. Потім
+// обчислюється 3 + 4 і повертається як результа
+let a = (1+2, 3+4);
+
+console.log(a);*/
+
+// три операції в одному рядку
+/*
+for (a = 1, b = 3, c = a * b; a < 10; a++) {
+...
+}*/
+
+/*
+let a = 1, b = 1;
+
+alert( ++a ); // 2, префіксна форма повертає нове значення
+alert( b++ ); // 1, постфіксна форма повертає старе значення*/
+
+/*
+let a = 2;
+
+let x = 1 + (a *= 2);*/
+
+/*let a = prompt("Перше число?", 1);
+let b = prompt("Друге число?", 2);
+
+alert(+a + +b); // 12*/
+
+// console.log('bd' >'ab');
+
+/*let a = 0;
+alert( Boolean(a) ); // false
+
+let b = "0";
+alert( Boolean(b) ); // true
+
+alert(a == b); // true!*/
+
+// операнди різних типів перетворюються оператором
+// порівняння == на числа
+
+/*Є також оператор строгої нерівності !==, аналогічний до !=.
+
+Оператор строгої рівності довше писати,
+проте він робить код більш зрозумілим і
+залишає менше місця для помилок.*/
+
+/*console.log(null === undefined); // false
+
+console.log(null == undefined); // true*/
+
+// якщо конвертувати null в число, то буде 0
+// якщо конвертувати undefined в число, то буде NaN
+//
+
+/*
+alert( null > 0 );  // (1) false
+alert( null == 0 ); // (2) false
+alert( null >= 0 ); // (3) true*/
+
+/*let title = prompt('Яка “офіційна” назва JavaScript?', '');
+
+if (title == 'ECMAScript') {
+    alert('Correctly!');
+}
+else {
+    alert('Ви не знаєте? ECMAScript!');
+}*/
+
+/*let num = prompt('Write your number:');
+
+if (num > 1) {
+    alert(1);
+}
+else if (num < 0){
+    alert(-1);
+}
+else {
+    alert(0);
+}*/
+
+/*let a, b;
+a = 1;
+b = 1;
+
+let result = (a + b < 4) ? 'Down' : 'Up';
+alert(result);*/
+
+/*let message = (login == 'Працівник') ? 'Привіт' :
+    (login == 'Директор') ? 'Вітаю' :
+        (login == '') ? 'Немає логіну' :
+            '';*/
+
+// alert( undefined || null || 0 );
+
+/*if (age <= 14 && age => 90) {
+
+}*/
+
+/*
+if (!(age => 14 && age <= 90)) {
+
+}
+*/
+
+/*if (age < 14 || age > 90)*/
