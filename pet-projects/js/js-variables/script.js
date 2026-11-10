@@ -255,3 +255,88 @@ console.log(`hello ${1}`);
 console.log(`hello ${"name"}`);
 
 console.log(`hello ${name}`);*/
+
+/*// Модульне вікно
+alert('Hello');*/
+
+/*
+
+prompt приймає два аргумента:
+
+result = prompt(title, [default]);
+
+Вона показує модальне вікно з текстовим повідомленням, полем,
+куди відвідувач може ввести текст, та кнопками ОК/Скасувати.
+
+title - текст, який буде відображатися для відвідувача
+
+default - необов'язковий другий параметр,
+початкове значення для поля введення тексту
+
+[...] - означає, що параметр не є обов'язковим
+
+*/
+
+/*let age = prompt('How old are you?', 100);
+
+alert(`You are ${age}`);*/
+
+/*confirm
+
+result = confirm(question);
+Функція confirm показує модальне вікно з питанням question та двома кнопками: ОК та
+Скасувати.
+Результат: true, якщо натиснути кнопку OK, інакше — false.*/
+
+/*let isBoss = confirm('Are you Boss?');
+
+alert(isBoss);
+
+console.log(isBoss);*/
+
+/*let name = prompt('whats your name?');
+
+alert(name);*/
+
+/*
+
+Перетворення на рядок
+
+let value = true;
+alert(typeof value); // boolean
+
+value = String(value);
+alert(typeof value); // string*/
+
+// Перетворення на число
+
+// 3, рядки перетворюються на числа
+// alert('6' / '2');
+
+/*let str = "123";
+
+alert(typeof str); // string
+
+let num = Number(str); // num 123
+
+alert(typeof num); // number
+
+let age = Number('text');
+
+alert(age); // NaN, помилка перетворення
+
+alert( Number("   123   ") ); // 123
+alert( Number("123z") );      // NaN (помилка читання числа на місці символу "z")
+alert( Number(true) );        // 1
+alert( Number(false) );       // 0*/
+
+/*alert( Boolean(1) ); // true
+alert( Boolean(0) ); // false
+
+alert( Boolean("вітаю") ); // true
+alert( Boolean("") ); // false
+
+// будь-які не пусті рядки є true
+
+alert(Boolean("0")); // true
+alert(Boolean(' ')); // true*/
