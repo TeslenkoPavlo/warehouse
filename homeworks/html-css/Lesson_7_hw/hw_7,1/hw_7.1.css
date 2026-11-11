@@ -1,0 +1,139 @@
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*body {*/
+/*    box-sizing: border-box;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    height: 100vh;*/
+/*    font-family: Inter,sans-serif;*/
+/*    gap: 132px;*/
+/*}*/
+
+
+/*body div {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    flex-direction: column;*/
+/*    position: relative;*/
+/*    width: 319px;*/
+/*    height: 492px;*/
+/*    border: 4px solid #554C4C;*/
+/*    background: rgba(217, 217, 217, 0.30);*/
+/*}*/
+
+/*body div > div{*/
+/*    position: absolute;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    border-radius: 50%;*/
+/*    background-color: white;*/
+/*    border: 4px solid #554C4C;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    top: -50px;*/
+/*}*/
+
+/*body div > h3 {*/
+/*    color: #000;*/
+/*    font-size: 40px;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    line-height: normal;*/
+/*}*/
+
+/*body div > p {*/
+/*    width: 211px;*/
+/*    color: #000;*/
+/*    text-align: center;*/
+/*    font-size: 20px;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    line-height: normal;*/
+/*}*/
+
+/*body div:nth-child(2) {*/
+/*    border: 4px solid #65856E;*/
+/*}*/
+
+/*body div:nth-child(2) > div {*/
+/*    border: 4px solid #65856E;*/
+/*}*/
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*body {*/
+/*    height: 100vh;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    font-family: Inter, sans-serif;*/
+/*    box-sizing: border-box;*/
+/*    gap: 132px;*/
+/*}*/
+
+/*body div {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    flex-direction: column;*/
+/*    position: relative;*/
+/*    width: 319px;*/
+/*    height: 492px;*/
+/*    border: 4px solid #554C4C;*/
+/*    background: rgba(217, 217, 217, 0.30);*/
+/*}*/
+
+/*body div > div {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    position: absolute;*/
+/*    top: -50px;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    border-radius: 50%;*/
+/*    background-color: white;*/
+/*    border: 4px solid #554C4C;*/
+/*}*/
+
+/*body div > h3 {*/
+/*    color: #000;*/
+/*    font-size: 40px;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    line-height: normal;*/
+/*}*/
+
+/*body div > p {*/
+/*    width: 211px;*/
+/*    color: #000;*/
+/*    text-align: center;*/
+/*    font-size: 20px;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    line-height: normal;*/
+/*}*/
+
+/*body div:nth-child(2) {*/
+/*    border: 4px solid #65856E;*/
+/*}*/
+
+/*body div:nth-child(2) > div {*/
+/*    border: 4px solid #65856E;*/
+/*}*/
+
+
+
+
+
+
+
+

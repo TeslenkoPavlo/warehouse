@@ -1,0 +1,74 @@
+/*div :first-child {*/
+/*    color: coral;*/
+/*}*/
+
+/*div p:first-of-type {*/
+/*    color: blue;*/
+/*}*/
+
+/*div p:first-of-type {*/
+/*    color: red;*/
+/*}*/
+
+/*div p::first-line {*/
+/*    color: blue;*/
+/*    font-size: 20px;*/
+/*}*/
+
+/*ul li:nth-last-child(2n+3){*/
+/*    color: chocolate;*/
+/*}*/
+
+
+
+
+
+/*div :last-child {*/
+/*    color: red;*/
+/*}*/
+
+/*div p::first-line {*/
+/*    color: blue;*/
+/*    font-size: 20px;*/
+
+/*}*/
+
+/*div p:first-of-type {*/
+/*    color: orange;*/
+/*}*/
+
+div span:first-of-type {
+    color: orange;
+}
+
+div span:last-of-type {
+    color: red;
+}
+
+div :first-child {
+    color: green;
+}
+
+div :last-child {
+    color: darkblue;
+}
+
+ul li:nth-child(odd) {
+    color: cyan;
+}
+
+ul li:nth-last-child(even) {
+    color: pink;
+}
+
+ul li:nth-child(1) {
+    color: orange;
+}
+
+ul li:nth-child(2n + 3) {
+    color: red;
+}
+
+ul li:nth-last-child(2n +2) {
+    color: pink;
+}

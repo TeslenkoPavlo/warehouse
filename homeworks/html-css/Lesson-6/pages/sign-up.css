@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid lightseagreen;
+    border-radius: 10%;
+    padding: 20px;
+    background-color: lightpink;
+    animation: forform 5s ease-out infinite alternate;
+}
+
+form>input {
+    margin-top: 5px;
+}
+
+form > label {
+    margin: 2px auto;
+}
+
+@keyframes forform {
+    from {
+        transform: skew(2deg, -2deg);
+    }
+    to {
+        transform: skew(-2deg, 2deg);
+    }
+}
+
+input[type="number"] {
+    width: 150px;
+}

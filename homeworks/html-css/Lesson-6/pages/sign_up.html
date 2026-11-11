@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="sign-up.css">
+</head>
+<body>
+
+<form>
+
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" placeholder="Enter your password" required>
+
+    <label for="subscribe">Subscribe</label>
+    <input type="checkbox" name="subscribe" id="subscribe" required>
+
+    <label>Sex</label>
+    <label><input type="radio" name="gender" value="male"></label>
+    <label><input type="radio" name="gender" value="female"></label>
+
+    <label for="send">Send</label>
+    <input type="button" name="send" id="send" value="Send" required>
+
+    <label for="submit">Submit</label>
+    <input type="submit" name="submit" id="submit" value="submit">
+
+    <label for="reset">Reset</label>
+    <input type="reset" name="reset" id="reset" value="reset">
+
+    <label for="number">Number</label>
+    <input type="number" name="number" id="number" min="18" max="30">
+
+    <label for="file">File</label>
+    <input type="file" name="file" id="file">
+
+</form>
+
+<form>
+
+    <label for="image">Image</label>
+    <input type="image" name="image" id="image">
+
+    <label for="problems">Problems</label>
+    <select name="problems" id="problems">
+        <optgroup label="Lorem">
+            <option value="lorem">Lorem.</option>
+            <option value="lorem">Lorem</option>
+        </optgroup>
+        <optgroup label="Lorem">
+            <option value="lorem">Lorem.</option>
+            <option value="lorem">Lorem</option>
+        </optgroup>
+    </select>
+
+    <label for="lorem">lorem</label>
+    <textarea name="lorem" id="lorem" cols="10" rows="5" style="resize:none;"></textarea>
+
+    <label for="color">Color</label>
+    <input type="color" name="color" id="color">
+
+    <label for="date">Date</label>
+    <input type="date" name="date" id="date">
+
+    <label for="time">Time</label>
+    <input type="time" name="time" id="time">
+
+    <label for="file_1">File</label>
+    <input type="file" name="file" id="file_1">
+
+
+</form>
+
+</body>
+</html>

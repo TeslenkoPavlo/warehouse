@@ -1,0 +1,17 @@
+/* Стилі для екранів шириною до 767px (смартфони) */
+@media screen and (max-width: 767px) {
+    .items {
+        width: 100%;
+        flex-direction: column;
+        padding: 32px 16px;
+        gap: 24px;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    .item > p {
+        width: 100%;
+    }
+}

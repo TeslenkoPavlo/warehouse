@@ -1,0 +1,131 @@
+/*.pink-box {*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    background-color: pink;*/
+/*    margin: 100px auto 0 auto;*/
+/*    animation: lorem 5s linear 2;*/
+/*}*/
+
+/*@keyframes lorem {*/
+/*    from {*/
+/*        transform: scale(1.5);*/
+/*    }*/
+/*    to {*/
+/*        transform: scale(1);*/
+/*        background-color: yellow;*/
+/*    }*/
+/*}*/
+
+/*.green-box {*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    background-color: green;*/
+/*    margin: 100px auto 0 auto;*/
+/*    animation: lorem 10s linear 5;*/
+/*}*/
+
+/*@keyframes lorem {*/
+/*    from {*/
+/*        transform: scale(1.5);*/
+/*    }*/
+/*    to {*/
+/*        transform: scale(1);*/
+/*        background-color: pink;*/
+/*    }*/
+/*}*/
+
+/*.yellow-box {*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    background-color: yellow;*/
+/*    margin: 100px auto 0 auto;*/
+/*    animation: lorem 10s ease 5;*/
+/*}*/
+
+/*@keyframes lorem {*/
+/*    from {*/
+/*        transform: scale(1.5);*/
+/*    }*/
+/*    to {*/
+/*        transform: scale(1);*/
+/*        background: pink;*/
+/*    }*/
+/*}*/
+
+/*.brown {*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    background-color: brown;*/
+/*    margin: 100px auto 0 auto;*/
+/*    animation: brown 10s ease-in 5;*/
+/*}*/
+
+/*@keyframes brown {*/
+/*    from {*/
+/*        transform: scale(1.5);*/
+/*    }*/
+/*    to {*/
+/*        transform: scale(1);*/
+/*        background-color: pink;*/
+/*    }*/
+/*}*/
+
+/*.gray {*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    background-color: gray;*/
+/*    margin: 100px auto 0 auto;*/
+/*    animation: lorem 10s ease-in infinite alternate;*/
+/*}*/
+
+/*@keyframes lorem {*/
+/*    from {*/
+/*        transform:  skew(40deg);*/
+/*    }*/
+/*    40% {*/
+/*        border-radius: 20%;*/
+/*    }*/
+/*    to {*/
+/*        background-color: pink;*/
+/*    }*/
+/*}*/
+
+/*.purple {*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    background-color: purple;*/
+/*    margin: 100px auto 0 auto;*/
+/*    animation: purple 5s infinite alternate;*/
+/*}*/
+
+/*@keyframes purple {*/
+/*    from {*/
+/*        !*transform: translate(300px, -300px);*!*/
+/*        !*transform: skewY(40deg);*!*/
+/*        !*transform: scale(2);*!*/
+/*    }*/
+/*    to {*/
+/*        background-color: yellow;*/
+/*    }*/
+/*}*/
+
+.example {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 100px auto 0 auto;
+    animation: name 5s linear infinite alternate;
+}
+
+@keyframes name {
+    from {
+        /*transform: scale(2);*/
+        /*!*transform: translate(300px, -300px);*!*/
+        /*!*transform: rotate(40deg);*!*/
+        /*!*transform: skew(0deg);*!*/
+        transform: translate3d(-20px, -20px, -20px);
+    }
+    to {
+        background-color: blue;
+    }
+}

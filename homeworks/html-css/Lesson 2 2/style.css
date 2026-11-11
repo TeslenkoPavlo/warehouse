@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.item:hover {
+    background-color: gray;
+    border-radius: 100%;
+    transition: 0.5s;
+}
+
