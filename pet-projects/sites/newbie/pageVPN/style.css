@@ -169,3 +169,83 @@ img {
     height: 380px;
     width: 550px;
 }
+
+/*----------------statistics------------------*/
+
+.wrapper-statistics {
+    height: 245px;
+    width: 100%;
+    margin-bottom: 55px;
+}
+
+.statistics {
+    position: relative;
+
+    height: 200px;
+    width: 1140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    background-color: #FFF;
+}
+
+.statistics > div {
+    width: 960px;
+    height: 126px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.users, .locations, .servers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 37px;
+}
+
+.users div:nth-child(1),
+.locations div:nth-child(1),
+.servers div:nth-child(1)
+{
+    width: 55px;
+    height: 55px;
+    border-radius: 70px;
+    background-color: #FFECEC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.users div:nth-child(2),
+.locations div:nth-child(2),
+.servers div:nth-child(2)
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.users div:nth-child(2) h3,
+.locations div:nth-child(2) h3,
+.servers div:nth-child(2) h3
+{
+    color: #0B132A;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.users div:nth-child(2) p,
+.locations div:nth-child(2) p,
+.servers div:nth-child(2) p
+{
+    color: #4F5665;
+    font-size: 20px;
+    line-height: 30px;
+}
