@@ -21,6 +21,10 @@
         gap: 10px;
     }
 
+    .hero-section-wrapper {
+        padding: 0 10px;
+    }
+
     .hero-section {
         flex-direction: column;
     }
@@ -37,5 +41,13 @@
     }
 
     /*-----statistics--------*/
+
+    .statistics {
+
+    }
+
+    .shadow {
+
+    }
 
 }
