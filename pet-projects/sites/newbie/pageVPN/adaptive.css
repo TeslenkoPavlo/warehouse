@@ -149,4 +149,37 @@
         flex-direction: column;
         gap: 42px;
     }
+
+    /*----------------------reviews-------------------------*/
+
+    .wrapper-reviews {
+        height: auto;
+        padding: 0 20px;
+    }
+
+    .details-reviews h3 {
+        width: 100%;
+    }
+
+    .details-reviews p {
+        width: 100%;
+    }
+
+    .swiper-reviews {
+        width: 100%;
+        right: 0;
+
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .navigation-reviews {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /*-----------------------------footer----------------------*/
 }

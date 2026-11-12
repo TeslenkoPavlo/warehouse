@@ -599,6 +599,8 @@ img {
 }
 
 .reviews {
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -635,13 +637,17 @@ img {
 .swiper-reviews {
     width: 1290px;
 
+    position: relative;
+
+    right: -80px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .swiper-reviews .review {
-    padding: 40px;
+    padding: 30px;
 
     width: 400px;
     height: 230px;
@@ -650,12 +656,21 @@ img {
     background-color: #FFFFFF;
 }
 
+.swiper-reviews > div:nth-child(2) {
+    border: 2px solid #DDDDDD;
+}
+
+.swiper-reviews > div:nth-child(3) {
+    border: 2px solid #DDDDDD;
+}
+
 .wrapper-review {
+    height: 170px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+
 }
 
 .wrapper-review .author {
@@ -696,10 +711,195 @@ img {
 }
 
 .wrapper-review .grade {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
+/*.wrapper-review .grade div {
+    padding: 1.07px 1.38px 2.3px 1.38px;
+}*/
+
 .wrapper-review .sometext {
+    width: 340px;
+    height: 100px;
     color: #0B132A;
+    line-height: 25px;
+}
+
+.navigation-reviews {
+    margin-top: 82px;
+    width: 1140px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-reviews .points {
+    width: 135px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-reviews .points button:nth-child(1) {
+    width: 45px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #F53838;
+}
+
+.navigation-reviews .points button {
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: #DDE0E4;
+    cursor: pointer;
+}
+
+.navigation-reviews .arrows {
+    width: 140px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-reviews .arrows button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: none;
+    border: 2px solid #F53838;
+}
+
+.navigation-reviews .arrows button:nth-child(2) {
+    background-color: #F53838;
+}
+
+/*----------------footer---------------*/
+
+footer {
+    margin-top: 204px;
+    height: 564px;
+    width: 100%;
+    background-color: #F8F8F8;
+}
+
+.wrapper-footer {
+    height: 564px;
+    width: 1140px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-footer .footer-details {
+    height: 241px;
+    width: 340px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.wrapper-footer .footer-details div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.wrapper-footer .footer-details div:nth-child(1) p {
+    color: #0B132A;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.wrapper-footer .footer-details div:nth-child(1) p span {
+    font-weight: 700;
+}
+
+.wrapper-footer .footer-details > p:nth-of-type(1) {
+    width: 340px;
+    height: 62px;
+
+    color: #4F5665;
+    line-height: 30px;
+}
+
+.wrapper-footer .footer-details > p:nth-of-type(1) > span {
+    font-weight: 500;
+}
+
+.footer-details .social-media {
+    width: 141px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-details .social-media button {
+    width: 33.6px;
+    height: 33.6px;
+
+    border-radius: 50%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.wrapper-footer .footer-details > p:nth-of-type(2) {
+    color: #AFB5C0;
+    text-align: center;
+    line-height: 30px;
+}
+
+.wrapper-footer .footer-details > p:nth-of-type(2) > span {
+    font-weight: 500;
+}
+
+.footer-lists {
+    width: 570px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-lists .list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-lists .list h4 {
+    color: #0B132A;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.footer-lists .list ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-lists .list li {
+    list-style-type: none;
+
+    color: #4F5665;
     line-height: 30px;
 }
