@@ -288,3 +288,235 @@ img {
     font-size: 20px;
     line-height: 30px;
 }
+
+
+/*-----features-details------------------*/
+
+.wrapper-features {
+    width: 100%;
+    height: 412px;
+}
+
+.features {
+    width: 1106px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 170px;
+}
+
+.details-features {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.details-features h3{
+    width: 384px;
+    color: #0B132A;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.details-features p {
+    width: 428px;
+    color: #4F5665;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.details-features ul {
+    padding-inline-start: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.details-features li {
+    padding-inline-start: 10px;
+
+    color: #4F5665;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.details-features li::marker {
+    content: url("svg/check-circle.svg");
+}
+
+/*---------plan-----------------*/
+
+.wrapper-plan {
+    margin-top: 214px;
+    width: 100%;
+    height: 950px;
+}
+
+.plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.plan > div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.plan > div:nth-child(1) h3 {
+    width: 384px;
+
+    text-align: center;
+    color: #0B132A;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.plan > div:nth-child(1) p {
+    width: 555px;
+
+    text-align: center;
+    color: #4F5665;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.plan > div:nth-child(2) {
+    width: 1090px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan .card {
+    width: 330px;
+    height: 760px;
+
+    border-radius: 10px;
+    border: 2px solid #DDDDDD;
+    background-color: #FFFFFF;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 80px 0 50px 0;
+    box-sizing: border-box;
+}
+
+.plan .card:nth-child(3) {
+    border: 2px solid #F53838;
+}
+
+.plan .card > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.plan .card h4 {
+    color: #0B132A;
+
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.plan .card ul {
+    padding-inline-start: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.plan .card li {
+    padding-inline-start: 20px;
+
+    color: #4F5665;
+
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.plan .card li::marker {
+    content: url("svg/jam_check.svg");
+}
+
+.plan .card > div:nth-child(2) h4 {
+    color: #0B132A;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.plan .card button {
+    width: 178px;
+    height: 45px;
+    border-radius: 50px;
+    border: 2px solid #F53838;
+    background: none;
+
+    color: #F53838;
+    font-weight: 800;
+}
+
+.plan .card .premium-button {
+    position: relative;
+    color: #FFFFFF;
+    background-color: #F53838;
+}
+
+.plan .card .premium-button::before {
+    content: '';
+    position: absolute;
+
+    top: 17px;
+    bottom: 0;
+    left: 25px;
+    right: 25px;
+
+    width: 127px;
+    height: 45px;
+
+    border-radius: 60px;
+    background: rgba(245, 56, 56, 0.35);
+    filter: blur(27px);
+
+
+
+}
+
+.card div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.plan .standard-plan span {
+    color: #4F5665;
+    font-weight: 400;
+}
+
+.plan .premium-plan span {
+    color: #4F5665;
+    font-weight: 400;
+}

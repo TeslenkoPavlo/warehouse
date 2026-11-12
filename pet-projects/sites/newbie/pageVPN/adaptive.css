@@ -42,12 +42,72 @@
 
     /*-----statistics--------*/
 
-    .statistics {
+    .wrapper-statistics {
+        height: auto;
+    }
 
+    .statistics {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
     }
 
     .shadow {
+        width: 100%;
+        height: auto;
+    }
 
+    .statistics > div:nth-child(1) {
+        width: 100%;
+        height: auto;
+
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    /*--------wrapper-features-----------*/
+
+    .wrapper-features {
+        height: auto;
+    }
+
+    .features {
+        width: 100%;
+        gap: 65px;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .details-features h3 {
+        width: 100%;
+    }
+
+    .details-features p {
+        width: 100%;
+    }
+
+    /*--------plan--------*/
+
+    .wrapper-plan {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .plan > div:nth-child(1) h3 {
+        width: 100%;
+    }
+
+    .plan > div:nth-child(1) p {
+        width: 100%;
+    }
+
+    .plan > div:nth-child(2) {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
     }
 
 }
