@@ -499,9 +499,6 @@ img {
     border-radius: 60px;
     background: rgba(245, 56, 56, 0.35);
     filter: blur(27px);
-
-
-
 }
 
 .card div:nth-child(2) {
@@ -519,4 +516,77 @@ img {
 .plan .premium-plan span {
     color: #4F5665;
     font-weight: 400;
+}
+
+/*-----------map----------------*/
+
+.wrapper-map {
+    margin-top: 150px;
+    height: 874px;
+    width: 100%;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 156px;
+}
+
+.map-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.map-details h3 {
+    width: 384px;
+    color: #0B132A;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.map-details p {
+    width: 555px;
+
+    color: #4F5665;
+    text-align: center;
+    line-height: 30px;
+}
+
+.map-details p span {
+    font-weight: 500;
+}
+
+.map img {
+    width: 1060px;
+    height: 538px;
+}
+
+/*----------brands----------*/
+
+.wrapper-brands {
+    height: 210px;
+    width: 100%;
+}
+
+.brands {
+    margin-top: 110px;
+    width: 1145px;
+    margin-bottom: 125px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    width: 190px;
+    height: 60px;
+    background-color: #DDE0E4;
 }

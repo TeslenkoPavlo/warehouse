@@ -34,7 +34,7 @@
         padding: 0 20px;
     }
 
-    img {
+    .hero-section img {
         width: 100%;
         height: 100%;
         padding: 20px 40px;
@@ -92,6 +92,7 @@
 
     .wrapper-plan {
         width: 100%;
+        height: auto;
         padding: 0 20px;
     }
 
@@ -110,4 +111,42 @@
         gap: 40px;
     }
 
+    /*--------------------map-----------------------*/
+
+    .wrapper-map {
+        height: auto;
+
+    }
+
+    .map {
+        gap: 70px;
+        padding: 0 20px;
+    }
+
+    .map-details h3 {
+        width: 100%;
+    }
+
+    .map-details p {
+        width: 100%;
+    }
+
+    .map img {
+        width: 100%;
+        height: auto;
+    }
+
+    /*------------brands----------*/
+
+    .wrapper-brands {
+        height: auto;
+    }
+
+    .brands {
+        padding: 0 20px;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        gap: 42px;
+    }
 }
