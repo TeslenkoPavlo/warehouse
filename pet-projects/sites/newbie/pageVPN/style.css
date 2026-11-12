@@ -590,3 +590,14 @@ img {
     height: 60px;
     background-color: #DDE0E4;
 }
+
+/*------------------reviews-----------------------*/
+
+.wrapper-reviews {
+    width: 100%;
+    height: 590px;
+}
+
+.reviews {
+
+}
