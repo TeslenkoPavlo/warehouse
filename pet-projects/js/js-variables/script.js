@@ -884,7 +884,7 @@ else {
     alert( 'Маємо надію, що ця сторінка виглядає добре!' );
 }*/
 
-let msg = +prompt('number', '');
+/*let msg = +prompt('number', '');
 
 switch(msg) {
     case 0:
@@ -899,4 +899,299 @@ switch(msg) {
         break;
     default:
         alert('unknown');
+}*/
+
+/*function showMessage() {
+    alert('Hello everybody!');
 }
+
+
+function name(parameter1, parameter2, ... parameterN) {
+    // body of function
+}
+
+showMessage();*/
+
+/*// Зміна, котра оголошена в тілі функції доступна лише в ній
+function showMessage() {
+    let message = "Hello, I am JavaScript!";
+
+    alert(message);
+}
+
+showMessage();
+
+alert( message );*/
+
+/*// Функція може використовувати зовнішні зміни
+let username = 'Ivan';
+
+function showMessage () {
+    let message = 'Hello, ' + username;
+    alert(message);
+}
+
+showMessage();*/
+
+// Функція має повний доступ до зовнішньої змінної
+// вона може змінювати її значення
+/*
+
+let userName = "Ivan";
+
+function showMessage() {
+    userName = 'Bogdan';
+
+    let message = 'Hello, ' + userName;
+    alert(message);
+}
+
+// Hello Bogdan
+showMessage();
+
+// Bogdan
+alert( userName );
+*/
+
+// якщо в функції є змінна
+// з таким ж самим ім'ям як у зовнішньої
+// то зовнішня змінна ігнорується
+
+/*let userName = 'Ivan';
+
+function showMessage() {
+    let userName = 'Bogdan';
+
+    let message = 'Hello, ' + userName;
+    alert(message);
+}
+
+showMessage();
+
+alert(userName);*/
+
+// можемо додавати параметри в функцію
+/*function showMessage(from, text) {
+    alert(from + ': ' + text);
+}
+
+showMessage('Anna', 'Hello!');
+showMessage('Anna', 'How are you?');*/
+
+
+// функція змінила значення лише локальної копії
+// значення глобальної змінної не було змінено
+/*function showMessage(from, text) {
+
+    from = '*' + from + '*';
+
+    alert(from + ': ' + text);
+}*/
+
+/*
+
+// default value для параметра можна присвоїти іншу функцію
+function showMessage(from, text = anotherFunction()) {
+    // anotherFunction() виконується лише якщо `text` не задано
+    // результат виконання цієї функції присвоїться змінній `text`
+}*/
+
+
+/*
+
+
+Обчислення типових параметрів
+В JavaScript, типовий параметр обчислюється кожного разу,
+коли викликається функція без відповідного параметру.
+В прикладі вище, функція anotherFunction() не викличеться,
+якщо буде задано параметр text.
+З іншого боку, вона буде викликатися кожного разу, коли text
+відсутній.
+
+*/
+
+/*// Можна вказувати default value для параметра
+function showMessage(from, text = "unknown text") {
+    alert(from + ": " + text);
+}*/
+
+// let from = 'Anna';
+
+// showMessage(from, 'Hello');
+
+// Anna
+// alert(from);
+
+// якщо викликати функцію без аргументів
+// то буде undefined
+
+// "*Анна*: undefined"
+// showMessage('Anna');
+
+// Типове значення також додається, якщо параметр існує,
+// але суворо дорівнює undefined, наприклад:
+// showMessage("Anna", undefined);
+
+/*
+
+наприклад, функція має два параметри,
+при викликанні функції ми кладемо в неї
+два аргумента
+
+
+*/
+
+
+/*// без типового значення для параметра
+function showMessage(from, text) {
+    if (text === undefined) {
+        text = 'none';
+    }
+
+    alert(from + ': ' + text);
+}*/
+
+/*
+function showMessage(from, text) {
+    // Якщо значення у змінній text дає false, призначається типове значення
+    // це передбачає, що text == "" це те саме, що і його повна відсутність
+    text = text || 'текст повідомлення відсутній';
+...
+}*/
+
+/*function fun(text) {
+    text = text ?? 'empty';
+    alert(text);
+}
+
+fun('');*/
+
+/*function sum(a, b) {
+    return a + b;
+}
+
+let result = sum(1, 2);
+alert(result);*/
+
+
+/*
+function checkAge(age) {
+    if (age >= 18) {
+        return true;
+    }
+    else {
+        return confirm('some text');
+    }
+}
+
+let age =
+    +prompt('How old are you?', '');
+
+if (checkAge(age)) {
+    alert('Access given');
+}
+else {
+    alert('Access is canceled');
+}
+*/
+
+/*
+В коді вище, якщо checkAge(age)
+поверне false,
+    тоді функція
+showMovie не дійде до виконання alert.
+
+    function showMovie(age) {
+    if ( !checkAge(age) ) {
+        return;
+    }
+
+    alert( "Показуємо фільм" ); // (*)
+    // ...
+}
+*/
+
+/*// Порожня функція
+// повертає undefined
+function doNothing() {
+
+}
+
+// true
+alert(doNothing() === undefined);*/
+
+/*// порожній return це те саме, що return undefined
+function doNothing() {
+    return;
+}
+
+// true
+alert(doNothing() === undefined);*/
+
+/*
+
+    Не можна робити перенос рядка між return та його значення
+    наприклад,
+    // error, тому що буде сприйматися наче між return та value
+    // є ;
+    return
+        ('some' + 'text')
+
+     правильно ось так:
+     return (
+                  'some'
+                   + 'text')
+* */
+
+
+// Функцію принято називати дієсловом
+
+/*
+
+    showMessage(..)     // показує повідомлення
+    getAge(..)          // повертає вік (якось його отримує або
+     обчислює)
+    calcSum(..)         // обчислює суму і повертає результат
+    createForm(..)      // створює форму (і зазвичай її повертає)
+    checkPermission(..) // перевіряє доступ, повертає true/false
+
+*/
+
+/*let n =
+    +prompt('Number: ', '');*/
+
+/*function showNumbers(n) {
+    nextPrime: for (let i = 2; i < n; i++) {
+
+        for (let j = 2; j < i; j++) {
+
+            if (i % j === 0) {
+                continue nextPrime;
+            }
+
+        }
+
+        alert(i);
+    }
+}*/
+
+
+/*let n =
+    +prompt('Number: ', '');
+
+function showNumbers(n) {
+    for (let i = 0; i < n; i++) {
+        if (!isPrime(i)) continue;
+
+        alert(i);
+    }
+}
+
+function isPrime(n) {
+    for (let i = 0; i < n; i++) {
+        if (n % i == 0) return false;
+    }
+
+    return true;
+}*/
+
