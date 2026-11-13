@@ -1195,3 +1195,242 @@ function isPrime(n) {
     return true;
 }*/
 
+
+
+/*function checkAge(age) {
+    // (age > 18) ?  alert(true) :  confirm('Do you have agreement from your parants?');
+    age = alert(true) || confirm('Do you have agreement from your parants?');
+}
+
+checkAge(9);*/
+
+
+
+// Правильна відповідь:
+
+/*
+function checkAge(age) {
+    return (age > 18) ? true : confirm('Батьки дозволили?');
+}*/
+
+/*
+function checkAge(age) {
+    return (age > 18) || confirm('Батьки дозволили?');
+}*/
+
+/*function min(a, b) {
+    if (a > b) {
+        alert(b);
+    }
+    else {
+        alert(a);
+    }
+}
+
+min(13,2);*/
+
+/*function pow(x, n) {
+    let result = x;
+
+    for (let i = 1; i < n; i++) {
+        result *= x;
+    }
+
+    return result;
+}
+
+let x = prompt("x?", '');
+let n = prompt("n?", '');
+
+if (n < 1) {
+    alert(`Степінь ${n} не підтримується, використовуйте натуральне число`);
+} else {
+    alert( pow(x, n) );
+}*/
+
+
+/*// Function Declaration
+function sayHi() {
+    alert('Hello');
+}*/
+
+/*// Function Expression
+let sayHi = function() {
+    alert('Hello');
+};*/
+
+// Функція це значення
+
+/*function sayHi() {
+    alert('Hello');
+}
+
+// show code of function
+alert(sayHi);*/
+
+// функція це значення, тому можемо функцію скопіювати в змінну
+
+/*function sayHi() {
+    alert('Hello');
+}*/
+
+/*Рядок (2) копіює це значення в змінну func. Ще раз зауважте: після sayHi немає дужок.
+Якби вони там були, тоді func = sayHi() записав би результат виклику sayHi()
+у func, а не саму функцію sayHi.*/
+
+/*let func = sayHi;
+
+func(); // Hello
+sayHi(); // Hello*/
+
+// крапка з комою стоїть, тому що це частина оголошення змінної, а не функції
+/*let value = function() {
+    alert('Hello');
+};
+
+let variable = value;
+
+variable();
+value();*/
+
+// callback
+
+/*function ask(question, yes, no) {
+    if (confirm()) yes()
+    else no();
+}*/
+
+/*function showOk() {
+    alert(' You are gree ');
+}
+
+function showCancel() {
+    alert('You have canceled doing');
+}*/
+
+/*Аргументи showOk та showCancel функції ask
+називаються функціями зворотного виклику
+або просто колбеками.*/
+
+// ask('Are you agree?', showOk, showCancel);
+
+// анонімні функції (їх не можна викликати поза ask())
+
+/*ask(
+    'Are you agree?',
+    function() { alert('You are agree'); },
+    function() { alert('You canceled attention'); }
+);*/
+
+/*
+
+    типи даних відображають дані
+    функція відображає дію
+
+*/
+
+/*
+
+       // Оголошення Функції
+    function sum(a, b) {
+        return a + b;
+    }
+
+        // Функціональний Вираз
+    let sum = function(a, b) {
+        return a + b;
+    };
+
+*/
+
+// декларовану функцію можна використовувати де завгодно перед оголошенням її та після
+
+// з функціональним виразом так не спрацює
+
+/*say('Hello'); // Hello
+
+function say(arg) {
+    alert(arg);
+}*/
+
+/*say('Hello'); // Нічого не відображає
+
+let say = function(arg) {
+    alert(arg);
+};*/
+
+
+/*У суворому режимі, якщо Оголошення Функції знаходиться
+в блоці {...}, то функція доступна усюди всередині блоку.
+Але не зовні.*/
+
+/*let age =
+    +prompt("How old are you?", 18);
+
+if (age < 18) {
+    function welcome() {
+        alert('Hello');
+    }
+
+    welcome();
+}
+else {
+    function welcome() {
+        alert("Hello");
+    }
+}
+
+welcome();  // помилка в суворому режимі (ReferenceError: welcome is not defined)*/
+
+/*let age =
+    +prompt('How old are you?', 18);
+
+let welcome;
+
+if (age < 18) {
+    welcome = function() {
+        alert('Hello');
+    };
+}
+else {
+    welcome = function() {
+        alert('Congraduation');
+    };
+}
+
+welcome();*/
+
+// можна використати умовний оператор ?
+
+/*
+let age =
+    +prompt('How old are you?', 18);
+
+let welcome = (age < 18) ?
+    function() { alert('Hello'); } :
+    function() { alert('Congraduation'); };
+
+welcome();
+*/
+
+
+/*
+Функції — це значення.
+Ми можемо присвоїти їх змінній, копіювати чи визначити у будь-якій частині коду.
+Якщо функція визначена як окрема інструкція в основному потоці коду,
+ то це називають “Оголошенням Функції”.
+Якщо функція була створена як частина іншого виразу, тоді це — “Функціональний Вираз”.
+Обробка Оголошень Функцій виконується перед виконанням блоку коду.
+Такі функції є видимими у всьому блоці.
+    Функції, що були визначені за допомогою Функціонального
+    Виразу, будуть створені тільки тоді, коли до них дійде потік виконання.
+    Зазвичай, коли нам потрібно визначити функцію, то
+    краще віддати перевагу синтаксису Оголошення Функції,
+    бо така функція є видимою навіть перед її визначенням в коді.
+    Це дає нам більшу гнучкість в організації коду та й сам синтаксис є більш читабельним.
+
+    Таким чином, використовувати Функціональний Вираз потрібно тільки тоді,
+     коли Оголошенням Функції не підходить для розв’язання нашої задачі.
+      Ми розглянули декілька таких прикладів у цьому розділі й побачимо ще в майбутньому.
+
+      */
