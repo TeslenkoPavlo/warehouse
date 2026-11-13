@@ -183,6 +183,9 @@ alert('not' / 2 -1);*/
 // output 1
 // alert(NaN ** 0);
 
+//  можна все що завгодно підносити до нульового степеня і поверне 1
+// alert(undefined ** 0);
+
 /*console.log(9007199254740991 + 1); // 9007199254740992
 console.log(9007199254740991 + 2); // 9007199254740992
 
@@ -288,6 +291,10 @@ result = confirm(question);
 Скасувати.
 Результат: true, якщо натиснути кнопку OK, інакше — false.*/
 
+/*let age = confirm('Are you 19 years old?');
+
+console.log(typeof age, age);*/
+
 /*let isBoss = confirm('Are you Boss?');
 
 alert(isBoss);
@@ -298,9 +305,8 @@ console.log(isBoss);*/
 
 alert(name);*/
 
-/*
 
-Перетворення на рядок
+/*// Перетворення на рядок
 
 let value = true;
 alert(typeof value); // boolean
@@ -517,3 +523,8 @@ if (!(age => 14 && age <= 90)) {
 */
 
 /*if (age < 14 || age > 90)*/
+
+/*let user;
+
+// перевірка чи значення null/undefiend
+alert(user ?? 'Anonim');*/
