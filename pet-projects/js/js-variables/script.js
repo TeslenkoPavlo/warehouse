@@ -1434,3 +1434,79 @@ welcome();
       Ми розглянули декілька таких прикладів у цьому розділі й побачимо ще в майбутньому.
 
       */
+
+// Стрілкові функції
+
+// let func = (arg1, arg2, arg3, ... , argN) => expression;
+
+/*Цей код створить функцію func з аргументами arg1..argN,
+що обчислює expression з правого боку (використовуючи
+ці аргументи) та повертає його результат.
+
+    Іншими словами, це приблизно те ж саме, що і:*/
+
+/*let func = function(arg1, arg2, arg3, ... , argN) {
+    return expression;
+};*/
+
+// два аргумента
+// let sum = (a, b) => a + b;
+
+/*
+    Ця стрілкова функція - це коротша форма для:
+
+    let sum = function(a, b) {
+        return a + b;
+    }
+* */
+
+// alert( sum(1, 2) );
+
+/*// один аргумент
+let double = n => n * 2;
+
+alert( double(3) ); // 6*/
+
+/*// без аргументів
+let say = () => alert('Hi');
+
+say();*/
+
+/*let age =
+    +prompt('How old are you?', 18);
+
+let welcome = (age < 18) ?
+    () => alert('hello!') :
+    () => alert('Congraduation');
+
+welcome();*/
+
+// Багато стрілкові функції
+
+/*let sum = (a, b) => {
+    let result = a + b;
+    return result;
+}
+
+alert( sum(1, 2) ); // 3*/
+
+/*
+Без фігурних дужок: (...args) => expression – права
+частина є виразом: функція виконує його і повертає результат.
+Дужки можна опускати, якщо є лише один аргумент, напр.
+n => n*2.
+З фігурними дужками: (...args) => { body } –
+дужки дозволяють включити в функцію більше однієї
+інструкції, але при цьому потрібно явно вказати return,
+щоб щось повернути.*/
+
+/*function ask(question, yes, no) {
+    if (confirm(question)) yes();
+    else no();
+}
+
+ask(
+    'Are you agree?',
+    () => alert('text'),
+    () => alert('text')
+)*/
