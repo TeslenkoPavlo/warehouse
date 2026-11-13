@@ -1510,3 +1510,5 @@ ask(
     () => alert('text'),
     () => alert('text')
 )*/
+
+// alert(undefined == null);
