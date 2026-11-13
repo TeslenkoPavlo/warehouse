@@ -528,3 +528,375 @@ if (!(age => 14 && age <= 90)) {
 
 // перевірка чи значення null/undefiend
 alert(user ?? 'Anonim');*/
+
+
+
+// Цикли: while i for
+
+
+
+/*let i = 0;
+
+// виводить значення 0 1 2
+// одне виконання циклу називається ітерацією
+while(i < 3) {
+    console.log(i);
+    i++;
+}*/
+
+/*// while(i != 0) ==> while(i)
+let i = 3;
+while(i) {
+    console.log(i);
+    i--;
+}*/
+
+/*// Якщо тіло має тільки одну операцію
+// можемо пропустити {}
+let i = 3;
+while (i) console.log(i--);*/
+
+
+/*// do {} while() виконається хоча б один раз незалежно від умови
+let i = 0;
+do {
+    console.log(i);
+    i++;
+} while (i < 3);*/
+
+/*
+*Початок* виконання
+→ (Якщо *умова* == true → виконати тіло і виконати крок)
+→ (Якщо *умова* == true → виконати тіло і виконати крок)
+→ (Якщо *умова* == true → виконати тіло і виконати крок)
+→ ...*/
+
+
+/*// вбудовані змінні доступні лише всередині циклу
+for (let i = 0; i < 3; i++) {
+    console.log(i);
+}*/
+
+/*let i = 0;
+
+// використовуємо існуючу змінну
+for (i = 0; i < 3; i++) {
+    console.log(i); // 0 1 2
+}
+
+// 3
+// зміна доступна, тому що вона оголошена поза циклом
+console.log(i);*/
+
+/*// оголошена змінна та присвоєне значення
+let i = 0;
+
+// немає в необхідності в початку
+for (; i < 3; i++) {
+    console.log(i);
+}*/
+
+/*// можемо прибрати частинку крок
+
+let i = 0;
+for (; i < 3 ;) {
+    console.log(i++);
+}
+
+// Це робить цикл ідентичним до while(i < 3)*/
+
+// вічний цикл
+/*let i = 0;
+for (;;) {
+    console.log(i++);
+}*/
+
+
+/*// код працює доти, поки вводяться числа, як тільки
+// користувач перестає їх водити, то
+// код завершується директивою break і виводить суму чисел
+let sum = 0;
+
+while (true) {
+    let value = +prompt("Write numbers", '');
+
+    // скасовує ведення або передається порожній рядок
+    if(!value) break;
+
+    sum += value;
+}
+
+console.log('Sum:' + sum);*/
+
+
+// вивести лише непарні значення
+/*for (let i = 0; i < 10; i++) {
+
+    // якщо умова вірна, тоді пропускаємо решту
+    // тіла циклу і починаємо з наступної інтеграції
+    if (i % 2 == 0) continue;
+
+    console.log(i);
+}*/
+
+/*for (let i = 0; i < 10; i++) {
+
+    if ( i % 2 ) {
+        console.log(i);
+    }
+}*/
+
+// break/continue -> не можуть
+// використовуватися
+// з тернарним оператором ?
+
+/*let i = 0;
+
+for (; i < 10; i++) {
+
+    /!*if (i > 5) {
+        console.log(i);
+    }
+    else {
+        continue;
+    }*!/
+
+    // error
+    /!*(i > 5) ? console.log(i) : continue;*!/
+
+}*/
+
+
+// мітка для цикла
+/*outer: for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+        let input =
+            prompt(`Значення в координатах (${i}, ${j})`, '');
+
+        // якщо скасувати або порожній рядок, то вихід з обох циклів
+        if (!input) break outer;
+    }
+}
+
+console.log('all right');*/
+
+/*// мітку можна ставити в новому рядку
+outer:
+for (let i = 0; i < 3; i++) {
+
+}*/
+
+/*break label; // стрибнути в мітку label нижче (не спрацює)
+
+label: for (...)*/
+
+/*
+label: {
+    // ...
+    break label; // працює
+    // ...
+}*/
+
+/*
+
+    while -> умова перевіряється перед кожною ітерацією
+    do..while -> умова перевіряється після кожної ітерації
+    for(;;) -> умова перевіряється перед кожною ітерацією.
+    Можна додатково налаштувати
+
+    для використання безкінечного циклу while(true) or for(;;)
+    перервати break
+
+    пропустити ітерацію за допомогою директиви continue
+
+    break/continue підтримують мітки перед циклом.
+    лише за допомогою міток можна
+    перервати вкладений цикл
+
+*/
+
+
+/*for(let i = 2; i <= 10; i++) {
+    if(i % 2 == 0) {
+
+        console.log(i);
+    }
+}*/
+
+/*let i = 0;
+while(i < 3) {
+    console.log(`Number: ${i++}`);
+}*/
+
+
+// цикл повторюється доти, поки користувач
+// не веде число більше за 100 або не скасує операцію
+// або не введе порожній рядок
+/*let i = 0;
+for(;;) {
+    let input =
+        +prompt('Введіть число більше за 100', '');
+    if (input > 100){
+        console.log('you are doing great work');
+        break;
+    }
+
+    if (input == '') {
+        break;
+    }
+
+    if(input == false) {
+        break;
+    }
+}*/
+
+
+/*
+
+    Перевірка && num рахуватиметься false,
+    коли num матиме значення null або порожній рядок ''.
+    В цьому випадку цикл while теж потрібно буде зупинити.
+
+    Друга перевірка додається через те, що у випадку, коли num буде null,
+    тоді перевірка num <= 100 верне true.
+    Отже, без другої перевірки цикл не зупиниться,
+    якщо користувач натисне Скасувати.
+    Необхідні обидві перевірки.
+
+*/
+
+/*let num;
+ do {
+     num =
+         prompt('Number equals 101 and bigger?', 0);
+
+ } while(num <= 100 && num);*/
+
+
+
+/*let n =
+    +prompt('Write a number', '');*/
+
+/*for (let i = 2; i < n; i++) {
+    if (i % 1 === 0) {
+        if (i % n === 0) {
+            console.log(i);
+        }
+    }
+}*/
+
+/*let n =
+    +prompt('write:', '');
+
+nextPrime:
+    for (let i = 2; i <= n; i++) { // для кожного i...
+
+        for (let j = 2; j < i; j++) { // шукаємо дільник..
+            if (i % j === 0) continue nextPrime; // не просте, беремо наступне i
+        }
+
+        console.log( i ); // просте число
+    }*/
+
+// конструкція switch
+
+// приклад використання switch
+
+/*let variable =
+    +prompt('Write a number', '');
+
+switch (variable) {
+    case 1:
+        alert('cool');
+        break;
+    case 2:
+        alert('super');
+        break;
+    default:
+        alert('finish');
+}*/
+
+/*let a =
+    +prompt('Write a message: ', '');*/
+
+
+// об'єднання двох кейсів
+/*
+switch(a) {
+    case 1:
+        alert('something');
+        break;
+    case 2:
+    case 3:
+        alert('other');
+        break;
+
+    default:
+        alert('error');
+}
+*/
+
+/*
+    Для 0 та 1 буде виконано перший alert.
+    Для 2 – другий alert.
+    Але для 3: результат виконання prompt є строкове значення "3",
+    яке строго не дорівнює === числу 3.
+    Таким чином ми маємо “мертвий код” в блоці case 3!
+    Буде виконано код блоку default.
+*/
+
+/*
+let arg =
+    prompt('Write a value', '');
+
+switch(arg) {
+    case '0':
+    case '1':
+        alert('one or ziro');
+        break;
+    case '2':
+        alert('Two');
+        break;
+
+    case 3:
+        alert('Never used');
+        break;
+
+    default:
+        alert('unknown value');
+}
+*/
+
+/*let browser =
+    prompt('Write text: ', '');
+
+if (browser === 'Edge') {
+    alert('You have got the Edge!');
+}
+else if (browser === 'Chrome' ||
+            browser ==='FireFox' ||
+           browser === 'Safari' ||
+           browser === 'Opera')
+{
+    alert('Ми підтримуємо і ці браузери');
+}
+else {
+    alert( 'Маємо надію, що ця сторінка виглядає добре!' );
+}*/
+
+let msg = +prompt('number', '');
+
+switch(msg) {
+    case 0:
+        alert(0);
+        break;
+    case 1:
+        alert(1);
+        break;
+    case 2:
+    case 3:
+        alert('2,3');
+        break;
+    default:
+        alert('unknown');
+}
