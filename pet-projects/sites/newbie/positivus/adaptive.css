@@ -1,0 +1,18 @@
+@media screen and (max-width: 1239px) {
+
+    .wrapper-header {
+        margin: 0 20px;
+        justify-content: center;
+        flex-direction: column;
+        gap: 70px;
+        align-items: flex-start;
+    }
+
+    .header-menu {
+        flex-direction: column;
+    }
+
+    .header-menu nav ul {
+        flex-direction: column;
+    }
+}
