@@ -36,6 +36,10 @@ header {
     border-radius: 20px;
 }
 
+header:hover {
+    animation: light_animation 1s ease infinite alternate;
+}
+
 .wrapper-header {
     margin: 42px 25px;
     width: 1343px;
@@ -95,6 +99,10 @@ header {
     border-radius: 20px;
 }
 
+.names:hover {
+    animation: light_animation 1s ease infinite alternate;
+}
+
 .wrapper-names {
     position: relative;
     margin: 34px 30px 86px 24px;
@@ -133,12 +141,20 @@ header {
     border-radius: 20px;
 }
 
+.photo:hover {
+    animation: light_animation 1s ease infinite alternate;
+}
+
 /*------------------------projects---------------------------------*/
 
 .projects {
     grid-area: projects;
     background-color: #FADCD9;
     border-radius: 20px;
+}
+
+.projects:hover {
+    animation: light_animation 1s ease infinite alternate;
 }
 
 .wrapper-projects {
@@ -222,6 +238,10 @@ header {
     border-radius: 20px;
 }
 
+.about:hover {
+    animation: light_animation 1s ease infinite alternate;
+}
+
 .wrapper-about {
     margin: 32px 24px 46px 24px;
 
@@ -244,14 +264,93 @@ header {
     line-height: 25px;
 }
 
+/*---------------------------contact------------------------*/
+
 .contact {
     grid-area: contact;
     background-color: #F8AFA6;
     border-radius: 20px;
 }
 
+.contact:hover {
+    animation: light_animation 1s ease infinite alternate;
+}
+
+.wrapper-contact {
+    margin: 30px 24px 53px 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 191px;
+}
+
+.wrapper-contact .question {
+    width: 400px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-contact .question p {
+    width: 78px;
+
+    color: #000;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.wrapper-contact p {
+    color: #000;
+    text-box: trim-both cap alphabetic;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 55px;
+    font-weight: 400;
+}
+
+/*---------------------------media---------------------*/
+
 .media {
     grid-area: media;
     background-color: #FADCD9;
     border-radius: 20px;
+}
+
+.media:hover {
+    animation: light_animation 1s ease infinite alternate;
+}
+
+.wrapper-media {
+    margin: 45px 57px;
+}
+
+.wrapper-media ul {
+    width: 334px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-media ul li {
+    list-style-type: none;
+}
+
+.wrapper-media ul li a {
+    text-decoration: none;
+
+    color: #000;
+    text-box: trim-both cap alphabetic;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+@keyframes light_animation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+
 }
