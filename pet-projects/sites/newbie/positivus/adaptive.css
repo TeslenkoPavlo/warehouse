@@ -1,7 +1,13 @@
 @media screen and (max-width: 1239px) {
 
+    .wrapper {
+        width: 100%;
+    }
+
+    /*----------------------------header-----------------------*/
+
     .wrapper-header {
-        margin: 0 20px;
+        padding: 0 20px;
         justify-content: center;
         flex-direction: column;
         gap: 70px;
@@ -15,4 +21,51 @@
     .header-menu nav ul {
         flex-direction: column;
     }
+
+    /*-------------------------hero-section---------------*/
+
+    .wrapper-hero-section {
+        padding: 0 20px;
+        flex-direction: column;
+    }
+
+    .hero-details {
+        width: 100%;
+    }
+
+    .hero-details h1 {
+        width: 100%;
+    }
+
+    .hero-details p {
+        width: 100%;
+    }
+
+    /*--------------------------------companies---------------------------*/
+
+    .wrapper-companies {
+        flex-direction: column;
+    }
+
+    /*------------------------------------services-----------------------------------*/
+
+    .wrapper-services {
+        padding: 0 20px;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .wrapper-services p {
+        width: 100%;
+    }
+
+    /*--------------------------------cards--------------------*/
+
+    .wrapper-cards {
+        padding: 0 20px;
+        width: 100%;
+        grid-template-columns: 600px;
+    }
+
 }

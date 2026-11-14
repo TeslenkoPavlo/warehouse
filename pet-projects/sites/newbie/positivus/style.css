@@ -23,7 +23,13 @@ body {
     "header" minmax(68px, auto)
     "." 70px
     "hero-section" minmax(515px, auto)
-    / 1fr;
+    "." 104px
+    "companies" minmax(48px, auto)
+    "." 140px
+    "services" minmax(51px, auto)
+    "." 85px
+    "cards" 930px
+    / minmax(0, 1fr);
 }
 
 /*------------------------------header-------------------------*/
@@ -99,5 +105,169 @@ header .logo {
 }
 
 .hero-details {
+    width: 531px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 35px;
+}
 
+.hero-details h1 {
+    width: 531px;
+    color: #000;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.hero-details p {
+    width: 498px;
+
+    color: #000;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.hero-details button {
+    padding: 20px 35px;
+    border: none;
+    border-radius: 14px;
+    background-color: #191A23;
+
+    color: #FFF;
+    font-size: 20px;
+    line-height: 28px;
+
+    cursor: pointer;
+}
+
+.wrapper-hero-section img {
+    width: 100%;
+    height: auto;
+}
+
+/*----------------------------------companies----------------------------*/
+
+.companies-section {
+    grid-area: companies;
+}
+
+.wrapper-companies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 96px;
+}
+
+.wrapper-companies img {
+    height: auto;
+}
+
+/*----------------------services---------------------------*/
+
+.services {
+    grid-area: services;
+}
+
+.wrapper-services {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+.wrapper-services h3 {
+    color: #000;
+    font-size: 40px;
+    font-weight: 500;
+
+    padding: 0 7px;
+    border-radius: 7px;
+    background-color: #B9FF66;
+}
+
+.wrapper-services p {
+    width: 580px;
+
+    color: #000;
+    font-size: 18px;
+}
+
+/*-----------------------------cards-----------------------------------*/
+
+.cards {
+    grid-area: cards;
+}
+
+.wrapper-cards {
+    width: 1240px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 600px);
+    grid-auto-rows: 310px;
+}
+
+.gray-card,
+.green-card,
+.black-card
+{
+    border-radius: 45px;
+    padding: 50px;
+}
+
+/*----------gray-card----------*/
+
+.gray-card {
+    background-color: #F3F3F3;
+}
+
+.wrapper-gray-card-1 {
+    width: 500px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-gray-card-1 > div:nth-child(1) {
+    height: 210px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.wrapper-gray-card-1 > div:nth-child(1) > div > h3 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 500;
+
+    /*підлаштовує ширину блоку строго під довжину тексту всередині*/
+    width: fit-content;
+
+    padding: 0 7px;
+    border-radius: 7px;
+    background-color: #B9FF66;
+}
+
+.wrapper-gray-card-1 > div:nth-child(1) > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.wrapper-gray-card-1 > div:nth-child(1) > div:nth-child(2) > p {
+    color: #000;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.green-card {
+    background-color: #B9FF66;
+}
+
+.black-card {
+    background-color: #191A23;
 }
