@@ -1,0 +1,257 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Gilroy-Light', sans-serif;
+}
+
+.wrapper {
+    width: 1392px;
+    margin: 24px auto;
+}
+
+.elements {
+    display: grid;
+    gap: 24px;
+    grid-template-rows: 101px 479px 250px 101px;
+    grid-template-columns: 448px 93px 330px 448px;
+    grid-template-areas:
+    "header header header header"
+    "names names photo projects"
+    "about contact contact projects"
+    "about contact contact media"
+}
+
+/*--------------------------------header------------------------*/
+
+header {
+    grid-area: header;
+    background-color: #FADCD9;
+    border-radius: 20px;
+}
+
+.wrapper-header {
+    margin: 42px 25px;
+    width: 1343px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-header h3 {
+    color: #000;
+
+    /*прибирає зайві вертикальні відступи шрифту зверху і знизу (trim-both):
+        верхній край вирівнює по висоті великих літер (cap),
+        нижній - по базовій лінії тексту (alphabetic)
+    */
+    text-box: trim-both cap alphabetic;
+    font-size: 25px;
+    font-style: Italic;
+    font-weight: 400;
+}
+
+.wrapper-header h3 span {
+    font-family: "Gilroy-Regular", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.wrapper-header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.wrapper-header nav ul li {
+    list-style-type: none;
+}
+
+.wrapper-header nav ul li a {
+    text-decoration: none;
+
+    color: #000;
+    text-box: trim-both cap alphabetic;
+    font-size: 16px;
+}
+
+
+/*------------------main---------------------*/
+
+
+/*--------------title-------------------------*/
+
+.names {
+    grid-area: names;
+    background-color: #FADCD9;
+    border-radius: 20px;
+}
+
+.wrapper-names {
+    position: relative;
+    margin: 34px 30px 86px 24px;
+    height: 359px;
+    width: 513px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.wrapper-names h1 {
+    color: #000;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 56px;
+    line-height: 1;
+}
+
+.wrapper-names h1 span {
+    font-family: 'Gilroy-Light', sans-serif;
+    font-style: Italic;
+    font-weight: 300;
+}
+
+.wrapper-names img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*---------------------------photo-----------------------------*/
+
+.photo {
+    grid-area: photo;
+    background: url('png/girl.png');
+    border-radius: 20px;
+}
+
+/*------------------------projects---------------------------------*/
+
+.projects {
+    grid-area: projects;
+    background-color: #FADCD9;
+    border-radius: 20px;
+}
+
+.wrapper-projects {
+    margin: 34px 24px 44px 24px;
+    height: 648px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.wrapper-projects .musea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 302px;
+}
+
+.wrapper-projects .musea p {
+    color: #000;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.wrapper-projects .line-image img {
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.wrapper-projects .line-image hr {
+   border: none;
+   border-top: 2px solid #F8AFA6;
+}
+
+.wrapper-projects .text-elara p {
+    color: #000;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+
+    margin-bottom: 41px;
+}
+
+.wrapper-projects .text-elara hr {
+    border: none;
+    border-top: 2px solid #F8AFA6;
+    width: 399px;
+}
+
+.wrapper-projects .text-verve p {
+    color: #000;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+
+    margin-bottom: 40px;
+}
+
+.wrapper-projects .text-verve hr {
+    border: none;
+    border-top: 2px solid #F8AFA6;
+    width: 399px;
+}
+
+.wrapper-projects .text-zephyr p {
+    color: #000;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+
+/*-------------------------about----------------------*/
+
+.about {
+    grid-area: about;
+    background-color: #FADCD9;
+    border-radius: 20px;
+}
+
+.wrapper-about {
+    margin: 32px 24px 46px 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+}
+
+.wrapper-about img {
+    width: 38px;
+    height: 38px;
+}
+
+.wrapper-about p {
+    width: 296px;
+
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.contact {
+    grid-area: contact;
+    background-color: #F8AFA6;
+    border-radius: 20px;
+}
+
+.media {
+    grid-area: media;
+    background-color: #FADCD9;
+    border-radius: 20px;
+}
