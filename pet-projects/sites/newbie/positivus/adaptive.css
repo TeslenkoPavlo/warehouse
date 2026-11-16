@@ -65,7 +65,26 @@
     .wrapper-cards {
         padding: 0 20px;
         width: 100%;
-        grid-template-columns: 600px;
+        grid-template-columns: min(100%, 400px);
+        justify-content: center;
+        grid-auto-rows: 550px;
+    }
+
+    .wrapper-black-card-1,
+    .wrapper-green-card-1,
+    .wrapper-gray-card-1 {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        gap: 69px;
+    }
+
+    .wrapper-green-card-1 {
+        gap: 81px;
+    }
+
+    .wrapper-black-card-1 {
+        gap: 50px;
     }
 
 }

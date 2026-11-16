@@ -28,7 +28,9 @@ body {
     "." 140px
     "services" minmax(51px, auto)
     "." 85px
-    "cards" 930px
+    "cards" minmax(930px, auto)
+    "." 123px
+    "business" minmax(347px, auto)
     / minmax(0, 1fr);
 }
 
@@ -215,12 +217,14 @@ header .logo {
     padding: 50px;
 }
 
-/*----------gray-card----------*/
+/*----------gray-card-1---------*/
 
 .gray-card {
     background-color: #F3F3F3;
 }
 
+.wrapper-black-card-1,
+.wrapper-green-card-1,
 .wrapper-gray-card-1 {
     width: 500px;
 
@@ -229,6 +233,8 @@ header .logo {
     align-items: center;
 }
 
+.wrapper-black-card-1 > div:nth-child(1),
+.wrapper-green-card-1 > div:nth-child(1),
 .wrapper-gray-card-1 > div:nth-child(1) {
     height: 210px;
 
@@ -238,6 +244,8 @@ header .logo {
     flex-direction: column;
 }
 
+.wrapper-black-card-1 > div:nth-child(1) > div > h3,
+.wrapper-green-card-1 > div:nth-child(1) > div > h3,
 .wrapper-gray-card-1 > div:nth-child(1) > div > h3 {
     color: #000;
     font-size: 30px;
@@ -251,6 +259,8 @@ header .logo {
     background-color: #B9FF66;
 }
 
+.wrapper-black-card-1 > div:nth-child(1) > div:nth-child(2),
+.wrapper-green-card-1 > div:nth-child(1) > div:nth-child(2),
 .wrapper-gray-card-1 > div:nth-child(1) > div:nth-child(2) {
     display: flex;
     justify-content: center;
@@ -258,6 +268,8 @@ header .logo {
     gap: 15px;
 }
 
+.wrapper-black-card-1 >div:nth-child(1) > div:nth-child(2) > p,
+.wrapper-green-card-1 > div:nth-child(1) > div:nth-child(2) > p,
 .wrapper-gray-card-1 > div:nth-child(1) > div:nth-child(2) > p {
     color: #000;
     font-size: 20px;
@@ -268,6 +280,72 @@ header .logo {
     background-color: #B9FF66;
 }
 
+.wrapper-green-card-1 > div:nth-child(1) > div > h3 {
+    background-color: #FFFFFF;
+}
+
 .black-card {
     background-color: #191A23;
+}
+
+.wrapper-black-card-1 > div:nth-child(1) > div > h3 {
+    background-color: #FFFFFF;
+}
+
+.wrapper-black-card-1 >div:nth-child(1) > div:nth-child(2) > p {
+    color: #FFFFFF;
+}
+
+.wrapper-cards > div:nth-child(6) > .wrapper-black-card-1 > div:nth-child(1) > div > h3 {
+    background-color: #B9FF66;
+}
+
+/*--------------------business--------------------------*/
+
+.business {
+    grid-area: business;
+    background-color: #F3F3F3;
+    border-radius: 45px;
+    padding: 0 135px 0 60px;
+}
+
+.wrapper-business {
+    width: 1045px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-business > div:nth-child(1) {
+    width: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.wrapper-business > div:nth-child(1) > h4 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.wrapper-business > div:nth-child(1) > p {
+    color: #000;
+    font-size: 18px;
+}
+
+.wrapper-business > div:nth-child(1) > button {
+    padding: 20px 35px;
+    border-radius: 14px;
+    border: none;
+    background-color: #191A23;
+
+    color: #FFF;
+    font-size: 20px;
+    line-height: 28px;
+    cursor: pointer;
 }
