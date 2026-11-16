@@ -39,6 +39,10 @@ body {
     "process" minmax(51px, auto)
     "." 85px
     "accordion" minmax(1224px, auto)
+    "." 140px
+    "team" minmax(51px, auto)
+    "." 80px
+    "our-team" minmax(833px, auto)
     / minmax(0, 1fr);
 }
 
@@ -558,4 +562,165 @@ header .logo {
 .wrapper-consultation > p {
     color: #000;
     font-size: 18px;
+}
+
+/*------------------gray-accordion------------------*/
+
+.gray-accordion {
+    height: 159px;
+    width: 100%;
+    border-radius: 45px;
+    border: 1px solid #191A23;
+    background-color: #F3F3F3;
+    box-shadow: 0 5px 0 0 #191A23;
+    padding: 41px 60px;
+}
+
+.gray-accordion .wrapper-gray-accordion {
+    width: 1117px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-gray-accordion > div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.wrapper-gray-accordion > div:nth-child(1) > h2 {
+    color: #000;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.wrapper-gray-accordion > div:nth-child(1) > p {
+    color: #000;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/*-------------------------team---------------------*/
+
+.team {
+    grid-area: team;
+}
+
+.wrapper-team {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+.wrapper-team h3 {
+    color: #000;
+
+    font-size: 40px;
+    font-weight: 500;
+
+    width: fit-content;
+    padding: 0 7px;
+    background-color: #B9FF66;
+    border-radius: 7px;
+}
+
+.wrapper-team p {
+    width: 473px;
+
+    color: #000;
+    font-size: 18px;
+}
+
+/*-----------------------our-team-------------------*/
+
+.our-team {
+    grid-area: our-team;
+}
+
+.wrapper-our-team {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.our-team-card-1 {
+    width: 387px;
+    height: 331px;
+
+    padding: 40px 35px;
+    border-radius: 45px;
+    border: 1px solid #191A23;
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 0 0 #191A23;
+}
+
+.our-team-card-2 {
+    height: 354px;
+}
+
+.wrapper-our-team-card-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.wrapper-our-team-card-1 > div {
+    position: relative;
+    width: 322px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.wrapper-our-team-card-1 > div > div > h4 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.wrapper-our-team-card-1 > div > div > p {
+    color: #000;
+    font-size: 18px;
+}
+
+.wrapper-our-team-card-1 > div >  img:nth-of-type(2) {
+    position: absolute;
+    top: 5px;
+    left: 283px;
+}
+
+.wrapper-our-team-card-1 hr {
+    border: none;
+    border-top: 2px solid black;
+    width: 100%;
+}
+
+.wrapper-our-team-card-1 > p {
+    color: #000;
+    font-size: 18px;
+}
+
+.wrapper-our-team > button {
+    grid-column: 3;
+    justify-self: end;
+
+    width: 269px;
+    padding: 20px 35px;
+    border: none;
+    border-radius: 14px;
+    background-color: #191A23;
+
+    color: #FFF;
+    font-size: 20px;
+    line-height: 28px;
+
+    cursor: pointer;
 }
