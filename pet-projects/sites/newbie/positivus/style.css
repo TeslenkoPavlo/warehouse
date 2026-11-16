@@ -31,6 +31,14 @@ body {
     "cards" minmax(930px, auto)
     "." 123px
     "business" minmax(347px, auto)
+    "." 140px
+    "case-studies" minmax(51px, auto)
+    "." 80px
+    "solutions" minmax(326px, auto)
+    "." 140px
+    "process" minmax(51px, auto)
+    "." 85px
+    "accordion" minmax(1224px, auto)
     / minmax(0, 1fr);
 }
 
@@ -348,4 +356,206 @@ header .logo {
     font-size: 20px;
     line-height: 28px;
     cursor: pointer;
+}
+
+.wrapper-business img {
+    position: relative;
+
+   top: 24px;
+}
+
+
+/*------------------------case-studies--------------------------*/
+
+.case-studies {
+    grid-area: case-studies;
+}
+
+.wrapper-case-studies {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+.wrapper-case-studies h3 {
+    color: #000;
+
+    font-size: 40px;
+    font-weight: 500;
+
+    width: fit-content;
+    background-color: #B9FF66;
+    border-radius: 7px;
+    padding: 0 7px;
+}
+
+.wrapper-case-studies p {
+    width: 580px;
+
+    color: #000;
+    font-size: 18px;
+}
+
+/*-------------------------------solutions------------------------*/
+
+.solutions {
+    grid-area: solutions;
+
+    background-color: #191A23;
+    border-radius: 45px;
+    padding: 70px 60px;
+}
+
+.wrapper-solutions {
+    width: 1114px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-solutions::before,
+.wrapper-solutions::after {
+    content: "";
+
+    width: 1px;
+    height: 186px;
+    background-color: white;
+}
+
+.information-solutions {
+    width: 286px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.information-solutions > p {
+    color: #FFF;
+    font-size: 18px;
+}
+
+.information-solutions > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.information-solutions > div > p {
+    color: #B9FF66;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+/*-----------------------------process--------------------------*/
+
+.process {
+    grid-area: process;
+}
+
+.wrapper-process {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+.wrapper-process h3 {
+    color: #000;
+    font-size: 40px;
+    font-weight: 500;
+
+    width: fit-content;
+    padding: 0 7px;
+    border-radius: 7px;
+    background-color: #B9FF66;
+}
+
+.wrapper-process p {
+    width: 292px;
+
+    color: #000;
+    font-size: 18px;
+}
+
+/*-------------------------accordion-----------------------*/
+
+.accordion {
+    grid-area: accordion;
+}
+
+.wrapper-accordion {
+    width: 1234px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/*---------------------------green-consultation---------------------*/
+
+.wrapper-accordion .consultation {
+    height: 279px;
+    width: 1234px;
+
+    background-color: #B9FF66;
+    border-radius: 45px;
+    border: 1px solid #191A23;
+    box-shadow: 0 5px 0 0 #191A23;
+
+    padding: 41px 60px;
+
+}
+
+.wrapper-consultation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.wrapper-consultation > div:nth-child(1) {
+    width: 1117px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-consultation > div:nth-child(1) > div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.wrapper-consultation > div:nth-child(1) > div:nth-child(1)  > h2 {
+    color: #000;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.wrapper-consultation > div:nth-child(1) > div:nth-child(1)  > p {
+    color: #000;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.wrapper-consultation > hr {
+    border: none;
+    border-top: 2px solid black;
+    width: 100%;
+}
+
+.wrapper-consultation > p {
+    color: #000;
+    font-size: 18px;
 }
