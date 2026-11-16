@@ -6,6 +6,10 @@
 
     /*----------------------------header-----------------------*/
 
+    header {
+        margin: 0 auto;
+    }
+
     .wrapper-header {
         padding: 0 20px;
         justify-content: center;
@@ -76,6 +80,16 @@
         grid-auto-rows: 550px;
     }
 
+    .wrapper-black-card-1 > div:nth-child(1),
+    .wrapper-green-card-1 > div:nth-child(1),
+    .wrapper-gray-card-1 > div:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 40px;
+    }
+
     .wrapper-black-card-1,
     .wrapper-green-card-1,
     .wrapper-gray-card-1 {
@@ -102,6 +116,7 @@
     }
 
     .wrapper-business {
+        padding: 0 20px;
         width: 100%;
 
         justify-content: center;
@@ -122,6 +137,11 @@
 
     .wrapper-business > div:nth-child(1) > p {
         text-align: center;
+    }
+
+    .wrapper-business > img {
+        height: auto;
+        width: 100%;
     }
 
     /*------------------------case-studies--------------------------*/
@@ -206,6 +226,63 @@
         align-items: flex-start;
         flex-direction: column;
         gap: 10px;
+    }
+
+    /*------------------gray-accordion------------------*/
+
+    .gray-accordion {
+        height: auto;
+    }
+
+    .gray-accordion .wrapper-gray-accordion {
+        width: 100%;
+
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .wrapper-gray-accordion > div:nth-child(1) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /*-------------------------team---------------------*/
+
+    .team {
+        margin: 0 auto;
+    }
+
+    .wrapper-team {
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .wrapper-team h3 {
+        text-align: center;
+    }
+
+    .wrapper-team p {
+        text-align: center;
+        width: 100%;
+    }
+
+    /*-----------------------our-team-------------------*/
+
+    .our-team {
+        margin: 0 auto;
+    }
+
+    .wrapper-our-team {
+        grid-template-columns: 1fr;
+    }
+
+    .wrapper-our-team > button {
+        grid-column: 1;
+        justify-self: center;
+        width: 100%;
     }
 
 }
