@@ -43,6 +43,11 @@ body {
     "team" minmax(51px, auto)
     "." 80px
     "our-team" minmax(833px, auto)
+    "." 100px
+    "testimonials" minmax(51px, auto)
+    "." 80px
+    "comments" minmax(625px, auto)
+    "." 140px
     / minmax(0, 1fr);
 }
 
@@ -723,4 +728,95 @@ header .logo {
     line-height: 28px;
 
     cursor: pointer;
+}
+
+/*--------------------------testimonials-----------------------*/
+
+.testimonials {
+    grid-area: testimonials;
+}
+
+.wrapper-testimonials {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+.wrapper-testimonials h3 {
+    color: #000;
+    font-size: 40px;
+    font-weight: 500;
+
+    width: fit-content;
+    padding: 0 7px;
+    border-radius: 7px;
+    background-color: #B9FF66;
+}
+
+.wrapper-testimonials p {
+    width: 473px;
+    color: #000;
+    font-size: 18px;
+}
+
+/*--------------------------comments--------------------*/
+
+.comments {
+    grid-area: comments;
+
+    background-color: #191A23;
+    border-radius: 45px;
+    padding: 84px 0 68px 0;
+}
+
+.wrapper-comments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 124px;
+}
+
+.comments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.comment-message {
+    width: 606px;
+    height: 237px;
+    padding: 48px 52px 51px 52px;
+
+    border: 1px solid #B9FF66;
+    border-radius: 40px;
+
+    position: relative;
+
+}
+
+.comment-message .triangle {
+    width: 0;
+    height: 0;
+
+    border-left: 39px solid transparent;
+    border-right: 39px solid transparent;
+    border-bottom: 64px solid #B9FF66;
+
+    transform: rotate(-180deg);
+}
+
+.comment-message p {
+    width: 502px;
+    color: #FFF;
+    font-size: 18px;
 }
