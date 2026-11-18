@@ -324,4 +324,104 @@
         text-align: center;
     }
 
+    /*--------------------------comments--------------------*/
+
+    .comments {
+        padding: 0 20px;
+    }
+
+    .wrapper-comments > .comments {
+        flex-direction: column;
+    }
+
+    .comment {
+        flex: none;
+    }
+
+    .comment-message {
+        width: 100%;
+        height: auto;
+    }
+
+    .comment-message .triangle {
+        top: 70px;
+    }
+
+    .comment-message p {
+        width: 100%;
+    }
+
+    .author-comment {
+        right: 0;
+    }
+
+    .comment-menu {
+        width: 100%;
+
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /*----------------------connect-with-us------------------*/
+
+    .wrapper-connect-with-us {
+        padding: 0 20px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .wrapper-connect-with-us p {
+        width: 100%;
+        text-align: center;
+    }
+
+    /*---------------contact-us-form----------------------*/
+
+    .contact-us-form {
+        margin: 0 20px;
+        padding: 0;
+    }
+
+    .wrapper-contact-us-form {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .wrapper-contact-us-form form {
+        padding: 50px 20px 0 20px;
+        height: auto;
+        width: 100%;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .form-radio {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .user-form-data {
+        align-items: flex-start;
+    }
+
+    .user-name input[type="text"] {
+        width: 100%;
+    }
+
+    .user-email input[type="email"] {
+        width: 100%;
+    }
+
+    .user-message textarea {
+        width: 100%;
+        height: auto;
+    }
+
+    .wrapper-contact-us-form > form > input[type="submit"] {
+        width: 100%;
+    }
+
 }
