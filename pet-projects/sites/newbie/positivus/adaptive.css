@@ -404,7 +404,14 @@
     }
 
     .user-form-data {
+        width: 100%;
         align-items: flex-start;
+    }
+
+    .user-name,
+    .user-email,
+    .user-message {
+        width: 100%;
     }
 
     .user-name input[type="text"] {

@@ -52,6 +52,7 @@ body {
     "." 85px
     "contact-us-form" minmax(773px, auto)
     "." 140px
+    "footer" minmax(514px, auto)
     / minmax(0, 1fr);
 }
 
@@ -957,6 +958,7 @@ header .logo {
 }
 
 .user-form-data {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1039,4 +1041,44 @@ header .logo {
     font-family: inherit;
     font-size: 20px;
     line-height: 28px;
+}
+
+/*---------------------footer---------------------*/
+
+footer {
+    grid-area: footer;
+
+    background-color: #191A23;
+    border-radius: 45px 45px 0 0;
+    padding: 55px 60px 50px 60px;
+}
+
+.wrapper-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 66px;
+}
+
+.footer-top-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 155px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
