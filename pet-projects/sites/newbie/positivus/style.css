@@ -1054,6 +1054,7 @@ footer {
 }
 
 .wrapper-footer {
+    width: 1120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1062,6 +1063,7 @@ footer {
 }
 
 .footer-top {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1070,15 +1072,128 @@ footer {
 }
 
 .footer-top-top {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 155px;
 }
 
-.footer-logo {
+.nav-footer ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 40px;
 }
+
+.nav-footer ul li {
+    list-style-type: none;
+}
+
+.nav-footer li a {
+    color: #FFF;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+.footer-top-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 154px;
+}
+
+.footer-contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.footer-contact-us > h3 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+
+    padding: 0 7px;
+    border-radius: 7px;
+    background-color: #B9FF66;
+}
+
+.footer-contact-us > div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-contact-us > div a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 18px;
+}
+
+.footer-top-bottom > form {
+    width: 634px;
+    height: 184px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    background-color: #292A32;
+    border-radius: 14px;
+}
+
+.footer-top-bottom > form input[type="email"] {
+    width: 285px;
+
+    padding: 22px 35px;
+    background-color: transparent;
+    border-radius: 14px;
+    border: 1px solid #FFF;
+}
+
+.footer-top-bottom > form input[type="email"]::placeholder {
+    color: #FFF;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+.footer-top-bottom > form input[type="submit"] {
+    padding: 20px 35px;
+    border: none;
+    border-radius: 14px;
+    background-color: #B9FF66;
+
+
+    color: #000;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: inherit;
+}
+
+.wrapper-footer > hr {
+    width: 100%;
+    border: none;
+    border-top: 2px solid #FFF;
+}
+
+.footer-copyright {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-copyright a,
+.footer-copyright p {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 28px;
+}
+

@@ -431,4 +431,50 @@
         width: 100%;
     }
 
+    /*---------------------footer---------------------*/
+
+    footer {
+        padding: 40px 20px;
+        margin: 0 20px;
+    }
+
+    .wrapper-footer {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .footer-top {
+        align-items: flex-start;
+    }
+
+    .footer-copyright,
+    .footer-top-bottom > form,
+    .footer-top-bottom,
+    .nav-footer ul,
+    .footer-top-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-top-top {
+        align-items: center;
+        gap: 50px;
+    }
+
+    .footer-top-bottom {
+        gap: 70px;
+    }
+
+    .footer-top-bottom > form {
+        width: 100%;
+        height: auto;
+        gap: 40px;
+    }
+
+    .footer-top-bottom > form input[type="submit"],
+    .footer-top-bottom > form input[type="email"] {
+        width: 100%;
+    }
+
+
 }
