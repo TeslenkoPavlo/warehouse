@@ -25,6 +25,58 @@ body {
     gap: 16px;
 }
 
+/*-------------------search-panel---------------------------*/
+
+.search-panel {
+    border-radius: 16px;
+    background-color: #FFF;
+    padding: 8px;
+}
+
+.wrapper-search-panel {
+    display: grid;
+    grid-template:
+    "." 16px
+    "main-menu-panel" minmax(437px, auto)
+    "." 341px
+    "additional-menu-panel" minmax(120px, auto)
+    "." 37px
+    / minmax(0, 240px);
+}
+
+.main-menu-panel {
+    grid-area: main-menu-panel;
+}
+
+.wrapper-main-menu-panel {
+    display: grid;
+    gap: 28px;
+    grid-template:
+    "logo-orange-farm" minmax(40px, auto)
+    "menu-elements-panel" minmax(376px, auto);
+}
+
+.logo-orange-farm {
+    grid-area: logo-orange-farm;
+}
+
+.menu-elements-panel {
+    grid-area: menu-elements-panel;
+}
+
+.wrapper-menu-elements-panel {
+    display: grid;
+    gap: 33px;
+}
+
+.wrapper-menu-elements-panel > button {
+    padding: 12px 16px;
+
+    border-radius: 20px;
+    border: 1px solid #F1F1F1;
+    background-color: #FFF;
+}
+
 .wrapper-rows {
     display: grid;
     grid-template-rows: 262px auto 256px;
