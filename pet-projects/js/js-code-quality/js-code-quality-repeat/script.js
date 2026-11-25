@@ -142,3 +142,42 @@ function calculateNum(num) {
 // function showUser(data, details) {
 //     showDetails(userData, accountDetails);
 // }
+/*
+
+function checkUserPermission(user) {
+    if (!user.isAdmin) {
+        return false;
+    }
+    return true;
+}
+
+function logOutUser(user) {
+    if (checkUserPermission === false) {
+        // Log out from system
+    }
+}
+
+let isValid;
+function validateEmail(email) {
+    isValid = email.includes("@");
+    if (!isValid) {
+        clearEmailInput();
+    }
+
+    return isValid;
+}
+
+function showErrorNotification(email) {
+    if (validateEmail === !isValid) {
+        console.log('error');
+    }
+}
+*/
+
+/*let userName = 'Олександр';
+let userRole = 'admin';
+
+function isAdmin(userName, userRole) {
+        return Boolean(userName === userRole);
+}*/
+
