@@ -10,52 +10,61 @@
 <body>
 
 <div class="wrapper">
-    <div class="wrapper-grid">
-        <div class="search-panel">
-            <div class="wrapper-search-panel">
-                <div class="main-menu-panel">
-                    <div class="wrapper-main-menu-panel">
-                        <img class="logo-orange-farm" src="png/logo-orange-farm.png" alt="">
-                        <div class="menu-elements-panel">
-                            <nav class="wrapper-menu-elements-panel">
-                                <button>Search</button>
-                                <ul>
-                                    <li>
-                                        <img src="png/icon-table.png" alt="">
-                                        <a href="#">Dashboard</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
+    <main>
+        <div class="navigation-menu">
+            <div class="navigation-panel">
+                <img src="png/logo-orange-farm.png" alt="">
+                <nav>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path d="M12.625 12.625L8.625 8.625M0.625 5.29167C0.625 5.9045 0.745707 6.51134 0.980229 7.07752C1.21475 7.64371 1.55849 8.15816 1.99183 8.5915C2.42518 9.02484 2.93962 9.36858 3.50581 9.60311C4.072 9.83763 4.67883 9.95833 5.29167 9.95833C5.9045 9.95833 6.51134 9.83763 7.07752 9.60311C7.64371 9.36858 8.15816 9.02484 8.5915 8.5915C9.02484 8.15816 9.36858 7.64371 9.60311 7.07752C9.83763 6.51134 9.95833 5.9045 9.95833 5.29167C9.95833 4.67883 9.83763 4.072 9.60311 3.50581C9.36858 2.93962 9.02484 2.42518 8.5915 1.99183C8.15816 1.55849 7.64371 1.21475 7.07752 0.980229C6.51134 0.745707 5.9045 0.625 5.29167 0.625C4.67883 0.625 4.072 0.745707 3.50581 0.980229C2.93962 1.21475 2.42518 1.55849 1.99183 1.99183C1.55849 2.42518 1.21475 2.93962 0.980229 3.50581C0.745707 4.072 0.625 4.67883 0.625 5.29167Z" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" stroke="#7D7D7D"/>
+                        </svg>
+                        Search
+                    </button>
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Customers</a></li>
+                        <li><a href="#">All reports</a></li>
+                        <li><a href="#">Geography</a></li>
+                        <li><a href="#">Conversations</a></li>
+                        <li><a href="#">Deals</a></li>
+                        <li><a href="#">Export</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="navigation-log-in">
+                <div class="navigation-user">
+                    <img src="png/user_person.png" alt="">
+                    <div>
+                        <h4>Gustavo Xavier</h4>
+                        <p>Admin</p>
                     </div>
                 </div>
-                <div class="additional-menu-panel"></div>
+                <ul>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Log out</a></li>
+                </ul>
             </div>
         </div>
-        <div class="wrapper-rows">
-            <div class="top-rows">
-                <div class="revenues">Revenues</div>
-                <div class="lost-deals">Lost deals</div>
-                <div class="quarter-goal">Quarter goal</div>
-            </div>
-            <div class="middle-rows">
-                <div>Customers</div>
-                <div class="right-middle-rows">
-                    <div>Growth</div>
-                    <div class="right-middle-bottom-rows">
-                        <div class="top-month">Top month</div>
-                        <div class="top-year">Top year</div>
-                        <div class="top-buyer">Top buyer</div>
+        <div class="dashboards-elements">
+            <div class="percents">
+                <div class="revenues">
+                    <h4>Revenues</h4>
+                    <div>
+                        <h2>15%</h2>
+                        <img src="png/icon_arrow.png" alt="">
+                    </div>
+                    <p>Increase compared to last week</p>
+                    <div>
+                        <p>Revenues report</p>
+                        <img src="png/icon_arrow_2.png" alt="">
                     </div>
                 </div>
-            </div>
-            <div class="bottom-rows">
-                <div class="chats">Chats</div>
-                <div class="top-states">Top states</div>
-                <div class="new-deals">new-deals</div>
+                <div class="lost-deals"></div>
+                <div class="quarter-goal"></div>
             </div>
         </div>
-    </div>
+    </main>
 </div>
 
 </body>
