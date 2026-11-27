@@ -189,15 +189,20 @@ main {
     margin: 16px;
     margin-left: 0;
     display: grid;
-    grid-template-rows: 261px 400px 256px;
+    grid-template-rows: minmax(261px, 1fr) minmax(400px, 1fr) minmax(256px, 1fr);
 }
+
+/*-----------------percents-------------------*/
 
 .percents {
     display: grid;
+    gap: 16px;
     grid-template-columns:
-    repeat(2, minmax(410px, 1fr))
-    minmax(260px, 1fr);
+    repeat(2, minmax(auto, 1fr))
+    auto;
 }
+
+/*-------------------------revenues-------------------------*/
 
 .revenues {
     background-color: #FFF;
@@ -213,6 +218,294 @@ main {
     margin-bottom: 24px;
 }
 
-.revenues > div:nth-of-type(1) {
+.revenues > div:nth-of-type(1) h2,
+.revenues > div:nth-of-type(1) img {
+    display: inline-block;
+}
+
+.revenues > div:nth-of-type(1) h2 {
+    color: #131313;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+
+.revenues > p {
+    margin-top: 8px;
+    color: #454545;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    margin-bottom: 65px;
+}
+
+.revenues > div:nth-of-type(2) p,
+.revenues > div:nth-of-type(2) img {
+    display: inline-block;
+}
+
+.revenues > div:nth-of-type(2) p {
+    color: #734A00;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+}
+
+/*---------------------------------quarter-goal-------------------------*/
+
+.quarter-goal {
+    background-color: #FFF;
+    border-radius: 16px;
+    padding: 24px;
+
     display: grid;
+    justify-items: center;
+}
+
+.quarter-goal > h2 {
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    margin-bottom: 24px;
+}
+
+.quarter-goal > img {
+    height: auto;
+    width: 100%;
+}
+
+.quarter-goal > div p,
+.quarter-goal > div img {
+    display: inline-block;
+}
+
+.quarter-goal > div p {
+    margin-top: 46px;
+    color: #734A00;
+    letter-spacing: -0.3px;
+}
+
+/*---------------------------results------------------------------*/
+
+.results {
+    display: grid;
+    grid-template-columns:
+    minmax(556px, auto)
+    minmax(540px, 1fr);
+}
+
+/*-------------------------customers-----------------------*/
+
+.customers {
+    margin: 16px 8px;
+    padding: 24px 0;
+    background-color: #FFF;
+    border-radius: 16px;
+
+    display: grid;
+    gap: 16px;
+}
+
+.customers > div:nth-child(1) {
+    margin: 0 24px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.customers > div:nth-child(1) > div {
+    display: grid;
+    gap: 7px;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    align-items: baseline;
+}
+
+.customers > div:nth-child(1) > div > h4 {
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+}
+
+.customers > div:nth-child(1) > div > p {
+    color: #454545;
+    letter-spacing: -0.3px;
+}
+
+.customers > div:nth-child(1) > div > p > span {
+    color: #454545;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+}
+
+.customers > div:nth-child(2) {
+    margin: 0 8px;
+}
+
+.customer {
+    padding: 16px;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.customer > div h4 {
+    color: #131313;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+}
+
+.customer > div p {
+    color: #454545;
+    font-size: 12px;
+    letter-spacing: -0.3px;
+}
+
+.customers > div:nth-child(3) {
+    margin: 0 24px;
+    display: grid;
+    gap: 4px;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+   align-content: center;
+}
+
+.customers > div:nth-child(3) p {
+    color: #734A00;
+    letter-spacing: -0.3px;
+}
+
+.dedicated-customer {
+    background-color: #FFF7E8;
+    border-radius: 16px;
+
+    grid-template-columns: auto 1fr auto;
+
+}
+
+.dedicated-customer > div:nth-child(3) {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+}
+
+/*----------------------------growth----------------------------*/
+
+.growth {
+    margin: 16px 0 0 9px;
+    display: grid;
+    grid-template-rows:
+    minmax(256px, auto)
+    minmax(128px, auto);
+}
+
+.growth > div:nth-child(1) {
+    background-color: #FFF;
+    border-radius: 16px;
+    padding: 24px;
+    display: grid;
+    gap: 16px;
+}
+
+.growth > div:nth-child(1) > div {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.growth > div:nth-child(1) > div > div {
+    display: grid;
+    gap: 7px;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.growth > div:nth-child(2) {
+    margin-top: 16px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(3, minmax(169px, auto));
+}
+
+.growth > div:nth-child(2) > div {
+    background-color: #FFF;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.growth > div:nth-child(2) > div:nth-child(1) {
+    display: grid;
+    gap: 29px;
+}
+
+.growth > div:nth-child(2) > div:nth-child(1) p,
+.growth > div:nth-child(2) > div:nth-child(2) p,
+.growth > div:nth-child(2) > div:nth-child(3) p {
+    color: #7D7D7D;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+}
+
+.growth > div:nth-child(2) > div:nth-child(1) h4,
+.growth > div:nth-child(2) > div:nth-child(2) h4 {
+    color: #734A00;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+}
+
+.growth > div:nth-child(2) > div:nth-child(1) h5 {
+    color: #FFA500;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+}
+
+.growth > div:nth-child(2) > div:nth-child(2) {
+    display: grid;
+    gap: 27px;
+}
+
+.growth > div:nth-child(2) > div:nth-child(2) > div {
+    display: grid;
+    gap: 4px;
+}
+
+.growth > div:nth-child(2) > div:nth-child(2) > div > h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #454545;
+    letter-spacing: -0.3px;
+}
+
+.growth > div:nth-child(2) > div:nth-child(3) {
+    display: grid;
+    gap: 16px;
+}
+
+.growth > div:nth-child(2) > div:nth-child(3) > div {
+    display: grid;
+    gap: 8px;
+}
+
+.growth > div:nth-child(2) > div:nth-child(3) > div > div {
+    display: grid;
+    gap: 4px;
+}
+
+.growth > div:nth-child(2) > div:nth-child(3) > div > div h4 {
+    color: #131313;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+}
+
+.growth > div:nth-child(2) > div:nth-child(3) > div > div p {
+    color: #454545;
+    font-size: 10px;
+    letter-spacing: -0.3px;
 }
